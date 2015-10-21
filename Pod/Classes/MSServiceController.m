@@ -74,6 +74,14 @@ MSServiceController *serviceController;
     
 }
 
+- (void)appSettingsDidChange:(NSDictionary *)changedKeyValue {
+    for(MSService *service in self.loadedModules) {
+        if ([service respondsToSelector:@selector(serviceSettingsDidChange:)]) {
+            [service serviceSettingsDidChange:changedKeyValue];
+        }
+    }
+}
+
 //MARK: UIApplicationDelegate
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     for(MSService *service in self.loadedModules) {

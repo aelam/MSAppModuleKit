@@ -15,11 +15,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    13
+//    20
+    
     MSServiceDemo1 *demo1 = [[MSServiceDemo1 alloc] init];
     MSServicePush *push = [MSServicePush sharedService];
     [serviceController loadServices:@[demo1, push]];
-    
-    //    [appModuleManager addModule:<#(MSAppModule *)#>];
+    [appModuleManager addModule:nil];
     
     return YES;
 }
