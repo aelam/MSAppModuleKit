@@ -1,0 +1,29 @@
+{
+  "name": "MSAppModuleKit",
+  "version": "0.1.0",
+  "summary": "A short description of MSAppModuleKit.",
+  "description": "",
+  "homepage": "https://github.com/aelam/SAAppModule",
+  "license": "MIT",
+  "authors": {
+    "Ryan Wang": "wanglun02@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/aelam/MSAppModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "JLRoutes": [
+
+    ]
+  }
+}

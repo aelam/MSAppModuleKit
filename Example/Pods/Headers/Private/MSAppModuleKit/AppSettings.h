@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Routes/URLParterns/AppSettings.h

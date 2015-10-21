@@ -21,8 +21,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6A4970638A7B7CC4DEEFBBB6 /* Pods_MSAppModuleKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4431E842DB19A06F7B7E9D9 /* Pods_MSAppModuleKit_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		7CDA2B0467361C8D1AAC7E7D /* Pods_MSAppModuleKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD7A25ED3680A9718613CC3 /* Pods_MSAppModuleKit_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		760D8C2411774CAE3C6BE9FA /* libPods-MSAppModuleKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE36F290FC337DE5865C677 /* libPods-MSAppModuleKit_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		94979F411BD7871900406E7B /* MSAppModuleDemo1.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 94979F401BD7871900406E7B /* MSAppModuleDemo1.podspec */; settings = {ASSET_TAGS = (); }; };
+		94979F431BD7889600406E7B /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94979F421BD7889600406E7B /* Launch Screen.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		02127E30434BAD46E185D02B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* MSAppModuleKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MSAppModuleKit.app; path = MSAppModuleKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE36F290FC337DE5865C677 /* libPods-MSAppModuleKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSAppModuleKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* MSAppModuleKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSAppModuleKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -57,8 +60,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		94979F401BD7871900406E7B /* MSAppModuleDemo1.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MSAppModuleDemo1.podspec; path = ../MSAppModuleDemo1.podspec; sourceTree = "<group>"; };
+		94979F421BD7889600406E7B /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		95CCFD3E21097828B13CE47A /* Pods-MSAppModuleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAppModuleKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSAppModuleKit_Example/Pods-MSAppModuleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9DD7A25ED3680A9718613CC3 /* Pods_MSAppModuleKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSAppModuleKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07E130A21D7F339BEA4F2D4 /* Pods-MSAppModuleKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAppModuleKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSAppModuleKit_Tests/Pods-MSAppModuleKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B735B7BBC22622FE6D0CDD /* MSAppModuleKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSAppModuleKit.podspec; path = ../MSAppModuleKit.podspec; sourceTree = "<group>"; };
 		DE33A6B249C51D0078A7E1BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -75,7 +79,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				7CDA2B0467361C8D1AAC7E7D /* Pods_MSAppModuleKit_Example.framework in Frameworks */,
+				760D8C2411774CAE3C6BE9FA /* libPods-MSAppModuleKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +112,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* MSAppModuleKit.app */,
+				6003F58A195388D20070C39A /* MSAppModuleKit_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -121,8 +125,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				9DD7A25ED3680A9718613CC3 /* Pods_MSAppModuleKit_Example.framework */,
 				F4431E842DB19A06F7B7E9D9 /* Pods_MSAppModuleKit_Tests.framework */,
+				5AE36F290FC337DE5865C677 /* libPods-MSAppModuleKit_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +153,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* MSAppModuleKit-Prefix.pch */,
+				94979F421BD7889600406E7B /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B735B7BBC22622FE6D0CDD /* MSAppModuleKit.podspec */,
+				94979F401BD7871900406E7B /* MSAppModuleDemo1.podspec */,
 				DE33A6B249C51D0078A7E1BC /* README.md */,
 				02127E30434BAD46E185D02B /* LICENSE */,
 			);
@@ -204,7 +210,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7C1D14EA014A859D9EBC1B70 /* Embed Pods Frameworks */,
 				490B9EC8FECE16918C7F0824 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -213,7 +218,7 @@
 			);
 			name = MSAppModuleKit_Example;
 			productName = MSAppModuleKit;
-			productReference = 6003F58A195388D20070C39A /* MSAppModuleKit.app */;
+			productReference = 6003F58A195388D20070C39A /* MSAppModuleKit_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* MSAppModuleKit_Tests */ = {
@@ -277,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				94979F411BD7871900406E7B /* MSAppModuleDemo1.podspec in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				94979F431BD7889600406E7B /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,21 +313,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSAppModuleKit_Example/Pods-MSAppModuleKit_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C1D14EA014A859D9EBC1B70 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSAppModuleKit_Example/Pods-MSAppModuleKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D43CDF419175A9F57D5DDDE /* Check Pods Manifest.lock */ = {

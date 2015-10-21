@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint MSAppModuleKit.podspec' to ensure this is a
+# Be sure to run `pod lib lint MSAppModule.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -15,26 +15,27 @@ Pod::Spec.new do |s|
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.description      = <<-DESC
+DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MSAppModuleKit"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "Ryan Wang" => "wanglun02@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MSAppModuleKit.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = "https://github.com/aelam/SAAppModule"
+# s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+s.license          = 'MIT'
+s.author           = { "Ryan Wang" => "wanglun02@gmail.com" }
+s.source           = { :git => "https://github.com/aelam/MSAppModule.git", :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/lunwang'
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+s.platform     = :ios, '7.0'
+s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MSAppModuleKit' => ['Pod/Assets/*.png']
-  }
+s.source_files = 'Pod/Classes/**/*'
+#  s.resource_bundles = {
+#    'MSAppModule' => ['Pod/Assets/*.png']
+#  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.public_header_files = 'Pod/Classes/**/*.h'
+s.frameworks = 'UIKit', 'Foundation'
+s.dependency 'JLRoutes'
+
 end

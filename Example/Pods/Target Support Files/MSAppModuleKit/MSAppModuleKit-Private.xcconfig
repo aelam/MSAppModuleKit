@@ -1,0 +1,6 @@
+#include "MSAppModuleKit.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/MSAppModuleKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/JLRoutes" "${PODS_ROOT}/Headers/Public/MSAppModuleDemo1" "${PODS_ROOT}/Headers/Public/MSAppModuleKit"
+OTHER_LDFLAGS = ${MSAPPMODULEKIT_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
