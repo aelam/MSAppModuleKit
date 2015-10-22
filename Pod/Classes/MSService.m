@@ -53,8 +53,7 @@
     return NO;
 }
 
-
-- (void)handleNotification:(NSNotification *)notification {
+- (void)serviceDidRecieveNotification:(NSNotification *)notification {
     
 }
 

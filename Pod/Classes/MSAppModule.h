@@ -47,6 +47,7 @@
 
 - (void)moduleSettingsDidChange:(NSDictionary *)settings;
 
+- (void)moduleDidRecieveNotification:(NSNotification *)notification;
 
 @end
 

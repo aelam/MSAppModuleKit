@@ -39,6 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)serviceDidEnterBackground:(id)info;
 - (void)serviceWillEnterForeground:(id)info;
 
+
+- (void)serviceDidRecieveNotification:(NSNotification *)notification;
+
+
 - (void)service:(MSService *)service didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_AVAILABLE_IOS(8_0);
 
 - (void)service:(MSService *)service didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken NS_AVAILABLE_IOS(3_0);

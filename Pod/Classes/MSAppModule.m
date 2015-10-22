@@ -62,6 +62,10 @@
 }
 
 
+- (void)moduleDidRecieveNotification:(NSNotification *)notification {
+    
+}
+
 - (void)handleAPNSWithPayLoad:(NSDictionary *)arg1 launchedByUser:(BOOL)arg2 {
     
 }
