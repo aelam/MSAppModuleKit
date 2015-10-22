@@ -66,6 +66,9 @@ MSAppModuleController *appModuleManager;
 }
 
 - (void)addModule:(MSAppModule *)module {
+    if (!module || [_modules containsObject:module]) {
+        return;
+    }
     [_modules addObject:module];
     if([module respondsToSelector:@selector(moduleDidLoad:)]) {
         [module moduleDidLoad:self.appSettings];

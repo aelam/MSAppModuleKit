@@ -50,6 +50,9 @@ MSServiceController *serviceController;
 }
 
 - (void)loadService:(MSService *)service {
+    if(!service || [self.loadedModules containsObject:service]) {
+        return;
+    }
     [self.loadedModules addObject:service];
     [service serviceDidLoad:self.serviceSettings];
     NSLog(@"loaded Service: %@", service);
