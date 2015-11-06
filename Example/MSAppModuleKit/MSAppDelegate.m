@@ -15,13 +15,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    13
-//    20
-    
-    MSServiceDemo1 *demo1 = [[MSServiceDemo1 alloc] init];
-    MSServicePush *push = [MSServicePush sharedService];
-    [serviceController loadServices:@[demo1, push]];
-    [appModuleManager addModule:nil];
+    id<MSAppSettings>appSettings = [MSAppSettings new];
+    [MSAppModuleController appModuleControllerWithSettings:appSettings];
+    MSAppModule *a = [MSAppModule new];
+    [appModuleManager addModule:a];
     
     return YES;
 }
@@ -72,6 +69,21 @@
     [appModuleManager applicationDidReceiveMemoryWarning];
 }
 
+
+// 推送
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    [appModuleManager applicationDidRegisterUserNotificationSettings:notificationSettings];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [appModuleManager applicationDidRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    [appModuleManager applicationDidFailToRegisterForRemoteNotificationsWithError:error];
+}
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [appModuleManager applicationDidReceiveRemoteNotification:userInfo];
     
@@ -79,7 +91,6 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
     [appModuleManager applicationDidReceiveLocalNotification:notification];
-    
 }
 
 

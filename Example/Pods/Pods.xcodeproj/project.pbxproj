@@ -7,311 +7,353 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		005F17741A41CC33B659545142EBA014 /* MSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB729E29B01A1499F6C14EBB4C592 /* MSService.m */; };
-		080C4C23077CD6B486151BEC26848F2F /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0702C5FC3F228DB3D0197E22CDB547 /* Router.m */; };
-		0CB94547A242BF5A5878F501430B3646 /* JLRoutes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F30A961034EA48E56D14877416B9D /* JLRoutes-dummy.m */; };
-		16505332624DC5A9BC5359C8D82BF26E /* urls.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D6BEAC1CB78818B0FF0A5317E73FDB /* urls.h */; };
-		1D2CEA38A61840042C86F1081F6B6C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BE24FB1427677CE979E313A4AA2082 /* Foundation.framework */; };
-		293EAE60854AFA23B4AABBB8B29D92DF /* MSAppModuleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F7800E1D7B2806900E368DBBD86E1C /* MSAppModuleKit-dummy.m */; };
-		2C2E2AF98F63E0B58B72685414684C3B /* AppURL.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD935471C962DC4BD238733F2FA8EA /* AppURL.m */; };
-		303E1F18C35F8CF54B2400A611FC1BD0 /* UIApplication+ActiveController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ED1ADC109BDB4F3294459F356A80199 /* UIApplication+ActiveController.h */; };
-		3525B3D5B2FEAA18BDAE0623E3315CD1 /* AppSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA700C88CF555608594405C567FFA24 /* AppSettings.h */; };
-		37987CB4B00B8B15C3919EB7C250C07F /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C55C184EE78EB9D1951D5D5EFE637D /* AppSettings.m */; };
-		38A919C11ED1E94FD2B3D5B7C579BA57 /* SAPlugableModuleDemo1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9246A883CE3184818B08FC30C6E631C1 /* SAPlugableModuleDemo1.h */; };
-		41401FB244ABB3A3ADD3637D53DB85E5 /* MSServicePush.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E8FB5609833294C1BA534822A76C61 /* MSServicePush.m */; };
-		4B48FB670DA07EF87CD1E53EB9429B45 /* RegexURLResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 80961C0EB750AF1B044F0967FB6ADDBE /* RegexURLResolver.m */; };
-		5CED3A1CD0EBB454CFDA82CBFC29C3CF /* RegexURLResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E5798BAF1B17AFC6CCC35F36AFAFE5A /* RegexURLResolver.h */; };
-		65E39B2E74DC827D3784A70C49A56FA2 /* MSMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = EF451572C910F715B2B01B2C3BD02A4D /* MSMenuItem.h */; };
-		789D46FA1F4A1F68B70B6044CB5F0D67 /* UIApplication+ActiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BA5F0DA0C43D6FBD5B3BD5D8352899 /* UIApplication+ActiveController.m */; };
-		888400B7D44BB3B2EA0FB50AC30F9B58 /* Pods-MSAppModuleKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D4A7F363EB2A0F5DF683BE4B6F80C /* Pods-MSAppModuleKit_Example-dummy.m */; };
-		8BFEA7E11D6FE82F88AF1AAB4C33CC1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BE24FB1427677CE979E313A4AA2082 /* Foundation.framework */; };
-		8CF4F5FB96BC8512A868DA66427B2616 /* MSService.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C7DACD732C8CC05B2A25E902261E38 /* MSService.h */; };
-		9029F78CB279F6E4467C7B2BE05DC230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BE24FB1427677CE979E313A4AA2082 /* Foundation.framework */; };
-		95D3F5A3CF4DAC36B7DB69B880B2185D /* MSAppModuleController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95AAF4F4C4D618EC81845F3C46D28548 /* MSAppModuleController.h */; };
-		98F99A449AE6E54AEAF1E21E0C89D398 /* MSModuleDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C1396DA753DD1D9FDC94B1B4D6208628 /* MSModuleDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		999E12347C26ABCD5994FA740A22EC02 /* MSServiceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5153C5E894CA66F42B05343370992D46 /* MSServiceController.h */; };
-		9EF1A8554035405B01EE7A1293A68240 /* MSAppModule.h in Headers */ = {isa = PBXBuildFile; fileRef = A0A708C2C93A4AA1F84ADA31C22FCEE4 /* MSAppModule.h */; };
-		B93E7257630DE6B1572614266CFA1964 /* MSAppModuleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 38EFBD1B03A7F2B1CE129B1718F0FD79 /* MSAppModuleKit.h */; };
-		B9C45673EBDB13F3BDEC2C3B8F51B697 /* MSAppModuleDemo1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA93CA0B06271F91D7E5FD7352263302 /* MSAppModuleDemo1-dummy.m */; };
-		C27F5F5FBFB60D1BC55CF6A712F5B71C /* JLRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = 42180CCF22AFDE0E8C9BC1AE00A4B40C /* JLRoutes.h */; };
-		C52E1B9F9D459BE8DB6F2111E1091BAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520112BE6375AA91D0BBE457BC8362DC /* UIKit.framework */; };
-		D1E51C49F502D8DD4145B93D756FCFA1 /* MSAppModuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90B5FE46597318DB80FE8A2EB9D5A6 /* MSAppModuleController.m */; };
-		D2C3B4B083F15806EC150E75BA5F4321 /* SAPlugableModuleDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = DC52DB45286926ED932F7AC97749523A /* SAPlugableModuleDemo1.m */; };
-		DF1E0E931BB3378A3BD49483DFA7B810 /* MSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA65739F0B0EA43D3970570DB246CE /* MSMenuItem.m */; };
-		E2BA0BB433DAA7A90DE84C9A196F7878 /* MSServiceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C473EFF4CA1E3B20AB4ADD0933821684 /* MSServiceConfig.h */; };
-		E71AFB8F0FE50964269EDD2E30618960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BE24FB1427677CE979E313A4AA2082 /* Foundation.framework */; };
-		EAB5D2AEAFDA1D0CE27FD2EBD03BAE8A /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B42E46407D239565F2BACE74649456 /* Router.h */; };
-		EC6345C18F8D3AE397E3AFF77500E06E /* AppURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 279F9B8397535668F43A75F2FE2B5C7A /* AppURL.h */; };
-		F534A5E7DE1812F7C1DCA486F1ECFD73 /* MSServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F51682C8DEA91B3B932857DBAD2C4 /* MSServiceController.m */; };
-		F62E1ADB916B4B120540EF8AFC20AB62 /* urls.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7927B4439A6FAD525511673A069A6C /* urls.m */; };
-		F6F842224DF8DDB140DA0AD6DCD3F1AE /* JLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE6196745E7EC64C55E9F0724B010B /* JLRoutes.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F705989522A97A916CD1B80852F4DD7D /* MSServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B41708BBEB8F9819D01E3292465AC390 /* MSServiceConfig.m */; };
-		F99093D4A89D071C6262FFB0385D158E /* MSServicePush.h in Headers */ = {isa = PBXBuildFile; fileRef = B85F13920129BF5494CB44B965155255 /* MSServicePush.h */; };
-		FF28B9C92C53A15FE69C7284F486BB09 /* MSAppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B890A81EFE7A0C599E6B457C60DF163 /* MSAppModule.m */; };
+		03FE82B3E820BE5B29EC14590E64E7E5 /* UIApplication+ActiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC9BFB12A07F6AA65CBB92733A6344 /* UIApplication+ActiveController.m */; };
+		0830482EFFE78C88BBF02C94A76053A0 /* MSAppModuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C5C08871A87BE51B1D9AE5D6422E7 /* MSAppModuleController.m */; };
+		0D9040EFEC62C965D1F8260FA3683ABE /* RegexURLResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C9ED967F2AF8DC2F6A15448C57AD61 /* RegexURLResolver.m */; };
+		1A5895ABC505F76DAD7C5F52CAE29F82 /* AppURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE70BD35D3AFD1E81D9887D6BD2F818 /* AppURL.m */; };
+		1BC44C8CB04143FDB3B69669E2F0637B /* UIApplication+ActiveController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32E75BF9C9E61E14123F3208ABF4CA55 /* UIApplication+ActiveController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D0D4DD1350CE4AF3255935E90413A3E /* MSService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A1EBADE668571A72BE6703EC69C55 /* MSService.m */; };
+		208F77D6473716572EF629E6A891835F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		24D4D61C13E515E215F7695B8B7030D6 /* MSServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C140CC5710C2D6F6B471B006A2459A26 /* MSServiceConfig.m */; };
+		27F233F62A3F3ACC1AA95D3E49F93EBD /* MSAppModuleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C29FADEA6EE4E6626EAE9E0C67D3701 /* MSAppModuleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EE92E79016EACD9E772B14E1F8665C2 /* SAPlugableModuleDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = A29A16737CC366745067B51E1B59D0C5 /* SAPlugableModuleDemo1.m */; };
+		30F74CFCC37D0F3D06248F899F288E9E /* MSModuleDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 62DF31DB10847D54F825583B6134F661 /* MSModuleDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C8AA65E5DC50D7A705C6042A9A33FED /* RegexURLResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = EC79AEAFAFEDBFD6583C552A55ADB498 /* RegexURLResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D15DBDE7DFCC19944F594C4DBB5C1E5 /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7B6B93A17F356C916BD3714F1A0BFF /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E008FC23D706ADF18CE68057936A02 /* MSAppModuleDemo1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A68DBC1234D07FD1158B89C76E77440 /* MSAppModuleDemo1-dummy.m */; };
+		6D16D48F4A540B723734638E9262F81F /* MSServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42723B1B518EE08B672110ACABC57B8 /* MSServiceController.m */; };
+		6E42C51063AD2032E8ABA4A28B256168 /* MSAppModuleController.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDF0072C61EDC542885BE170BFA672D /* MSAppModuleController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D630C4338D7ACBD9DDF54633093413B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		82F11887596B3E737B8A551036CD7A2D /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2667B256025AB5B8790D5C45D4AA0739 /* AppSettings.m */; };
+		8C24B0BED96108528784372B58D9AD35 /* urls.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DE71F13510A76FD95E810A9D02DB94 /* urls.m */; };
+		90E34B4B10382B7C33BD7D0C9DFDB320 /* MSMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F353AD4A0AD77A0C18F71440AAC6337 /* MSMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9205F2E950ECE60F774B5D45799FE5E3 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A946A028757387CD51671B26F8485EC /* Router.m */; };
+		960971E55D30D8A8900B7CB86E8C3811 /* MSAppModuleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F575C117638E2575C11EC29628A26C /* MSAppModuleKit-dummy.m */; };
+		9B0F1182EC2396BAC44D92B93BE1F54C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		A7E6929499D0B6065A5A18DD7EFD9BA0 /* MSServiceController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A826BA6F50EBF4FA3479FE42C88A55E /* MSServiceController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD4415A5E62F3B8EE1DC6E20DFCFC806 /* MSAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FEE5809B7DC46120C4E4BC3CE38E5E /* MSAppSettings.m */; };
+		B08DB8DFD515AA1C8D9AE2FA7216529E /* MSService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F63A834CED4C1FBC434B2AB3F125F4F /* MSService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2A43622C1D22F92490880931063571E /* JLRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = C83AD2D6875CEBBEA5D7C129DA531968 /* JLRoutes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B434650A2F884A653B77D0EE2DFCC9B0 /* MSServicePush.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A69A4B665E815D1D0E5A51DF1501F5 /* MSServicePush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B450944B9A75FBE92D3823CF3832F3EE /* MSAppModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE4EAE102B16C106C2304AD91E6E1EF /* MSAppModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5594F86B56FD66AFF697A3CCD7FFC0E /* SAPlugableModuleDemo1.h in Headers */ = {isa = PBXBuildFile; fileRef = A1628D48AF6D4A6D40C6AAC41076530B /* SAPlugableModuleDemo1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53148A3569AF694FA64D6EADEE1018D /* MSServicePush.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2DF0CE4F2F00DB3F14696B6FCF1A8 /* MSServicePush.m */; };
+		C7B80ED7180213AD2441E04E076A766F /* MSAppSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5F1F61AD0E1AB19BD7D599F01EB03E /* MSAppSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC633AD2659D5C8FDD6D627B843DA9D1 /* AppURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA5C423CFFBF293FE8027018E611D95 /* AppURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5EC4D41D011006DF740970E44D9F72 /* MSAppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91C18A925543FAC536FA3149FECF49 /* MSAppModule.m */; };
+		D1033078214C80EA53405598D57FCC3F /* Pods-MSAppModuleKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 351C6B3D4C76AB9E75C402591986FC49 /* Pods-MSAppModuleKit_Example-dummy.m */; };
+		D6D56EE1412D6A4666BCDA04BF2E2B39 /* JLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 637F49DE2848424EE95E29324EAA40C5 /* JLRoutes.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D99124C8A9EDA91E3CBAF302C3F34677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		DC0713FADC837C7F217394B4F92F4461 /* MSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AEED694741B40026C74D5583E25F8 /* MSMenuItem.m */; };
+		E4CA48A84B45D4EF027BE1FAAA9F1206 /* JLRoutes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCEF9D4D5F19FB92768290668E3E21E /* JLRoutes-dummy.m */; };
+		ED091CE6BB6FFE269799001BA1285729 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		EE04C5415035380E580BF7C1DC0923F5 /* AppSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = B0553F9BC85AAC5A35D48A078BCE52BE /* AppSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2F4593456C2DE589292F55D39A02F2B /* urls.h in Headers */ = {isa = PBXBuildFile; fileRef = B65B21AF99DFD217033C8F0E43EC6A2F /* urls.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC51AF20C4D2B0430863EE37A53DB54A /* MSServiceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6ED37518CEA1F4106CE0DB26646791 /* MSServiceConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0384E8475FEC5FAB929BB32B9615BFA2 /* PBXContainerItemProxy */ = {
+		173330EA87ECFF27B66D2F6A99288986 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED62E761029CED64E55E67C3E302623E;
+			remoteGlobalIDString = 40A045DF8C21A467D0092F6642949199;
 			remoteInfo = JLRoutes;
 		};
-		1600B3D981C46B7B9E8D23F9A8563C52 /* PBXContainerItemProxy */ = {
+		282612876F08792075E9834516899ABA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED62E761029CED64E55E67C3E302623E;
-			remoteInfo = JLRoutes;
+			remoteGlobalIDString = 334A49F6324483F85BFAADEDD7A3F683;
+			remoteInfo = MSAppModuleKit;
 		};
-		53F3B90A807F3B480C2B96369F8B9A69 /* PBXContainerItemProxy */ = {
+		5F6C45647A5480FFE3E0C46D3AE61CE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C799277DB8BA91940982C3D5165C40C4;
+			remoteGlobalIDString = E983A20BD43442B8C4680B2B2FDE1C49;
 			remoteInfo = "MSAppModuleDemo1-SAAppModule";
 		};
-		73BA0B30F675549FF7C2F5EBABF3B03E /* PBXContainerItemProxy */ = {
+		6D7932811E72B066A99F53CF9369086F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 23D3C20B804343B36CFBB497624146B6;
-			remoteInfo = MSAppModuleKit;
-		};
-		94D90BCA4ED0750474D4DABB6030C4E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 23D3C20B804343B36CFBB497624146B6;
-			remoteInfo = MSAppModuleKit;
-		};
-		EBC2619B9733FCE6A2A3B311483F65D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6DAE4B43400558C6CB045E7E04ED65A6;
+			remoteGlobalIDString = 84AD2230912B8794357D740BF9543B50;
 			remoteInfo = MSAppModuleDemo1;
+		};
+		9B0270E4C5C471DA065000CF4E5199F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A045DF8C21A467D0092F6642949199;
+			remoteInfo = JLRoutes;
+		};
+		FF0A8E3A4125201366D40EF985DA8B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334A49F6324483F85BFAADEDD7A3F683;
+			remoteInfo = MSAppModuleKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0776056D5DB832779AF78D902F0C1909 /* MSAppModuleDemo1-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MSAppModuleDemo1-Private.xcconfig"; sourceTree = "<group>"; };
-		0B890A81EFE7A0C599E6B457C60DF163 /* MSAppModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSAppModule.m; sourceTree = "<group>"; };
-		0ED1ADC109BDB4F3294459F356A80199 /* UIApplication+ActiveController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ActiveController.h"; sourceTree = "<group>"; };
-		279F9B8397535668F43A75F2FE2B5C7A /* AppURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppURL.h; sourceTree = "<group>"; };
-		33B617FD28769FA33009282B7B1DEF3B /* MSAppModuleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSAppModuleKit.xcconfig; sourceTree = "<group>"; };
-		366F51682C8DEA91B3B932857DBAD2C4 /* MSServiceController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSServiceController.m; sourceTree = "<group>"; };
-		38EFBD1B03A7F2B1CE129B1718F0FD79 /* MSAppModuleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppModuleKit.h; sourceTree = "<group>"; };
-		3C4BB729E29B01A1499F6C14EBB4C592 /* MSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSService.m; sourceTree = "<group>"; };
-		3C90B5FE46597318DB80FE8A2EB9D5A6 /* MSAppModuleController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSAppModuleController.m; sourceTree = "<group>"; };
-		42180CCF22AFDE0E8C9BC1AE00A4B40C /* JLRoutes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JLRoutes.h; path = JLRoutes/JLRoutes.h; sourceTree = "<group>"; };
-		45F40341674AD1EBF1869BE9F291E34A /* libPods-MSAppModuleKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSAppModuleKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		467F30A961034EA48E56D14877416B9D /* JLRoutes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes-dummy.m"; sourceTree = "<group>"; };
-		46BE24FB1427677CE979E313A4AA2082 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		47D6BEAC1CB78818B0FF0A5317E73FDB /* urls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = urls.h; sourceTree = "<group>"; };
-		48A05C11F3658384562F3FBDE35505D2 /* MSAppModuleDemo1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAppModuleDemo1-prefix.pch"; sourceTree = "<group>"; };
-		505D8094AD67F1802F48A378FCC7A7F7 /* MSAppModuleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAppModuleKit-prefix.pch"; sourceTree = "<group>"; };
-		50906776FB91FCA8998395382170895F /* libMSAppModuleDemo1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSAppModuleDemo1.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		50E8FB5609833294C1BA534822A76C61 /* MSServicePush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSServicePush.m; sourceTree = "<group>"; };
-		5153C5E894CA66F42B05343370992D46 /* MSServiceController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSServiceController.h; sourceTree = "<group>"; };
-		520112BE6375AA91D0BBE457BC8362DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		62182710036870CADEC847E64E006E73 /* JLRoutes-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JLRoutes-Private.xcconfig"; sourceTree = "<group>"; };
-		6B60A4076CC611789A2602CF79A96B66 /* MSAppModuleKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MSAppModuleKit-Private.xcconfig"; sourceTree = "<group>"; };
-		6E53C65804BA0A9DAA8A64D29FA07EAF /* libMSAppModuleKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSAppModuleKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E5798BAF1B17AFC6CCC35F36AFAFE5A /* RegexURLResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegexURLResolver.h; sourceTree = "<group>"; };
-		71BA5F0DA0C43D6FBD5B3BD5D8352899 /* UIApplication+ActiveController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ActiveController.m"; sourceTree = "<group>"; };
-		77C55C184EE78EB9D1951D5D5EFE637D /* AppSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
-		7CA700C88CF555608594405C567FFA24 /* AppSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
-		7CBA65739F0B0EA43D3970570DB246CE /* MSMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSMenuItem.m; sourceTree = "<group>"; };
-		80961C0EB750AF1B044F0967FB6ADDBE /* RegexURLResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegexURLResolver.m; sourceTree = "<group>"; };
-		8EBE6196745E7EC64C55E9F0724B010B /* JLRoutes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JLRoutes.m; path = JLRoutes/JLRoutes.m; sourceTree = "<group>"; };
-		9246A883CE3184818B08FC30C6E631C1 /* SAPlugableModuleDemo1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAPlugableModuleDemo1.h; sourceTree = "<group>"; };
-		95AAF4F4C4D618EC81845F3C46D28548 /* MSAppModuleController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppModuleController.h; sourceTree = "<group>"; };
-		A0A708C2C93A4AA1F84ADA31C22FCEE4 /* MSAppModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppModule.h; sourceTree = "<group>"; };
-		A0C7DACD732C8CC05B2A25E902261E38 /* MSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSService.h; sourceTree = "<group>"; };
-		A2660013D8418A0D17AF05CE95543772 /* Pods-MSAppModuleKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSAppModuleKit_Example-resources.sh"; sourceTree = "<group>"; };
-		AB1F4A357FBB87A99D4B6661B3803902 /* libJLRoutes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJLRoutes.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD7927B4439A6FAD525511673A069A6C /* urls.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = urls.m; sourceTree = "<group>"; };
-		B41708BBEB8F9819D01E3292465AC390 /* MSServiceConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSServiceConfig.m; sourceTree = "<group>"; };
-		B85F13920129BF5494CB44B965155255 /* MSServicePush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSServicePush.h; sourceTree = "<group>"; };
+		00BEE8889D9A2FA224569A7015EF93B6 /* Pods-MSAppModuleKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSAppModuleKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0362865F1522AAE167072A14ED25B143 /* libMSAppModuleDemo1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSAppModuleDemo1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F91C18A925543FAC536FA3149FECF49 /* MSAppModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSAppModule.m; sourceTree = "<group>"; };
+		1A826BA6F50EBF4FA3479FE42C88A55E /* MSServiceController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSServiceController.h; sourceTree = "<group>"; };
+		255AEED694741B40026C74D5583E25F8 /* MSMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSMenuItem.m; sourceTree = "<group>"; };
+		2667B256025AB5B8790D5C45D4AA0739 /* AppSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		2E2DF5F93F974BF795DFB303AE37BD49 /* Pods-MSAppModuleKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSAppModuleKit_Example-resources.sh"; sourceTree = "<group>"; };
+		2F2BE65AC3441BED7B3B8C71ED9EB2E2 /* Pods-MSAppModuleKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSAppModuleKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F353AD4A0AD77A0C18F71440AAC6337 /* MSMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSMenuItem.h; sourceTree = "<group>"; };
+		30C9ED967F2AF8DC2F6A15448C57AD61 /* RegexURLResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegexURLResolver.m; sourceTree = "<group>"; };
+		32E75BF9C9E61E14123F3208ABF4CA55 /* UIApplication+ActiveController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ActiveController.h"; sourceTree = "<group>"; };
+		351C6B3D4C76AB9E75C402591986FC49 /* Pods-MSAppModuleKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAppModuleKit_Example-dummy.m"; sourceTree = "<group>"; };
+		3F63A834CED4C1FBC434B2AB3F125F4F /* MSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSService.h; sourceTree = "<group>"; };
+		44C366E26A81BD4B314AC1D637CB7892 /* libJLRoutes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJLRoutes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A616A9663879EAFAFC1BD249E686F28 /* libMSAppModuleKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSAppModuleKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A68DBC1234D07FD1158B89C76E77440 /* MSAppModuleDemo1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAppModuleDemo1-dummy.m"; sourceTree = "<group>"; };
+		4A946A028757387CD51671B26F8485EC /* Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		4C29FADEA6EE4E6626EAE9E0C67D3701 /* MSAppModuleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppModuleKit.h; sourceTree = "<group>"; };
+		5577B8D214EC477B432D4653C413168F /* JLRoutes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JLRoutes.xcconfig; sourceTree = "<group>"; };
+		601341ABC3F025EAE6FC703C5894E514 /* Pods-MSAppModuleKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSAppModuleKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		62DF31DB10847D54F825583B6134F661 /* MSModuleDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSModuleDefines.h; sourceTree = "<group>"; };
+		637F49DE2848424EE95E29324EAA40C5 /* JLRoutes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JLRoutes.m; path = JLRoutes/JLRoutes.m; sourceTree = "<group>"; };
+		67A69A4B665E815D1D0E5A51DF1501F5 /* MSServicePush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSServicePush.h; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F5F1F61AD0E1AB19BD7D599F01EB03E /* MSAppSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppSettings.h; sourceTree = "<group>"; };
+		74FEE5809B7DC46120C4E4BC3CE38E5E /* MSAppSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSAppSettings.m; sourceTree = "<group>"; };
+		758F7982D8FCAE7583DDA2EB479122F2 /* Pods-MSAppModuleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAppModuleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7784F67544AF4B1B632AFD549BF43455 /* MSAppModuleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSAppModuleKit.xcconfig; sourceTree = "<group>"; };
+		7C6ED37518CEA1F4106CE0DB26646791 /* MSServiceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSServiceConfig.h; sourceTree = "<group>"; };
+		87EE3B713F1E3C078D89BA4C99A6CAA4 /* MSAppModuleDemo1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAppModuleDemo1-prefix.pch"; sourceTree = "<group>"; };
+		8B02847D20ED164A1D0506A8EABB9A4C /* MSAppModuleDemo1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSAppModuleDemo1.xcconfig; sourceTree = "<group>"; };
+		91100F04569DEF8043BE588E28EEDB42 /* Pods-MSAppModuleKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAppModuleKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9CA5C423CFFBF293FE8027018E611D95 /* AppURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppURL.h; sourceTree = "<group>"; };
+		9EE4EAE102B16C106C2304AD91E6E1EF /* MSAppModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppModule.h; sourceTree = "<group>"; };
+		A1628D48AF6D4A6D40C6AAC41076530B /* SAPlugableModuleDemo1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAPlugableModuleDemo1.h; sourceTree = "<group>"; };
+		A29A16737CC366745067B51E1B59D0C5 /* SAPlugableModuleDemo1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAPlugableModuleDemo1.m; sourceTree = "<group>"; };
+		A4F575C117638E2575C11EC29628A26C /* MSAppModuleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAppModuleKit-dummy.m"; sourceTree = "<group>"; };
+		A5D2DF0CE4F2F00DB3F14696B6FCF1A8 /* MSServicePush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSServicePush.m; sourceTree = "<group>"; };
+		B0553F9BC85AAC5A35D48A078BCE52BE /* AppSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		B65B21AF99DFD217033C8F0E43EC6A2F /* urls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = urls.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA93CA0B06271F91D7E5FD7352263302 /* MSAppModuleDemo1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAppModuleDemo1-dummy.m"; sourceTree = "<group>"; };
-		BACD935471C962DC4BD238733F2FA8EA /* AppURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppURL.m; sourceTree = "<group>"; };
-		BD85340ACA566F4C171D8CEABBCDF024 /* Pods-MSAppModuleKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSAppModuleKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1396DA753DD1D9FDC94B1B4D6208628 /* MSModuleDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSModuleDefines.h; sourceTree = "<group>"; };
-		C473EFF4CA1E3B20AB4ADD0933821684 /* MSServiceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSServiceConfig.h; sourceTree = "<group>"; };
-		CC0702C5FC3F228DB3D0197E22CDB547 /* Router.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
-		D3ADEA385D9481FF3DBB1FE8148AB38C /* SAAppModule.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAAppModule.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5F7800E1D7B2806900E368DBBD86E1C /* MSAppModuleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAppModuleKit-dummy.m"; sourceTree = "<group>"; };
-		DC52DB45286926ED932F7AC97749523A /* SAPlugableModuleDemo1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAPlugableModuleDemo1.m; sourceTree = "<group>"; };
-		E5D9ADCB9B98989821D3DA66D199F2D3 /* Pods-MSAppModuleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAppModuleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EA45A702041857294E9ECA90586082D3 /* MSAppModuleDemo1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSAppModuleDemo1.xcconfig; sourceTree = "<group>"; };
-		EB4AC92EDD09F27E0A145015A4AC9564 /* JLRoutes.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JLRoutes.xcconfig; sourceTree = "<group>"; };
-		EF451572C910F715B2B01B2C3BD02A4D /* MSMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSMenuItem.h; sourceTree = "<group>"; };
-		F262F9E481F5C5A127D4389B1BEA5836 /* Pods-MSAppModuleKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAppModuleKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F6B42E46407D239565F2BACE74649456 /* Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
-		F7CC51239D44EEB332BD1CBBEC478864 /* JLRoutes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLRoutes-prefix.pch"; sourceTree = "<group>"; };
-		FE519EC546E774F8AE44E52EE6E9ADD3 /* Pods-MSAppModuleKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSAppModuleKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF5D4A7F363EB2A0F5DF683BE4B6F80C /* Pods-MSAppModuleKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAppModuleKit_Example-dummy.m"; sourceTree = "<group>"; };
+		BCDF0072C61EDC542885BE170BFA672D /* MSAppModuleController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MSAppModuleController.h; sourceTree = "<group>"; };
+		C140CC5710C2D6F6B471B006A2459A26 /* MSServiceConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSServiceConfig.m; sourceTree = "<group>"; };
+		C2EC9BFB12A07F6AA65CBB92733A6344 /* UIApplication+ActiveController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ActiveController.m"; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C83AD2D6875CEBBEA5D7C129DA531968 /* JLRoutes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JLRoutes.h; path = JLRoutes/JLRoutes.h; sourceTree = "<group>"; };
+		CE4A1EBADE668571A72BE6703EC69C55 /* MSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSService.m; sourceTree = "<group>"; };
+		D1B0D93B66A38157B20EB5C434893F81 /* libPods-MSAppModuleKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSAppModuleKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DE71F13510A76FD95E810A9D02DB94 /* urls.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = urls.m; sourceTree = "<group>"; };
+		D65C5C08871A87BE51B1D9AE5D6422E7 /* MSAppModuleController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSAppModuleController.m; sourceTree = "<group>"; };
+		DC42F53E6BC64B43172B10B60EF85611 /* JLRoutes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLRoutes-prefix.pch"; sourceTree = "<group>"; };
+		DE7B6B93A17F356C916BD3714F1A0BFF /* Router.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		E42723B1B518EE08B672110ACABC57B8 /* MSServiceController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MSServiceController.m; sourceTree = "<group>"; };
+		EC79AEAFAFEDBFD6583C552A55ADB498 /* RegexURLResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegexURLResolver.h; sourceTree = "<group>"; };
+		F43374035C55B42A723D231F924CE207 /* MSAppModuleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAppModuleKit-prefix.pch"; sourceTree = "<group>"; };
+		FD6968D704A316749B6208FF8297063F /* SAAppModule.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAAppModule.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCEF9D4D5F19FB92768290668E3E21E /* JLRoutes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JLRoutes-dummy.m"; sourceTree = "<group>"; };
+		FFE70BD35D3AFD1E81D9887D6BD2F818 /* AppURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppURL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0984E7B22A84CACAB08367339F237BB7 /* Frameworks */ = {
+		503538FA9ABCDCBBF65ED6BA7E7097FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BFEA7E11D6FE82F88AF1AAB4C33CC1F /* Foundation.framework in Frameworks */,
+				9B0F1182EC2396BAC44D92B93BE1F54C /* Foundation.framework in Frameworks */,
+				ED091CE6BB6FFE269799001BA1285729 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2885A04C30A20C01C810D0A45709FFCE /* Frameworks */ = {
+		9199954692EFF8A5E8C0407D8BCFA548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E71AFB8F0FE50964269EDD2E30618960 /* Foundation.framework in Frameworks */,
-				C52E1B9F9D459BE8DB6F2111E1091BAF /* UIKit.framework in Frameworks */,
+				D99124C8A9EDA91E3CBAF302C3F34677 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BE045D95D21AA7DEA5DA1DFB9C7E227 /* Frameworks */ = {
+		96ACC820DF5A9C471DEE8602E1F3ECF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9029F78CB279F6E4467C7B2BE05DC230 /* Foundation.framework in Frameworks */,
+				208F77D6473716572EF629E6A891835F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A426905C802550B8A2CDC0495D757D11 /* Frameworks */ = {
+		AEBA7F1694DF3D5637C152F449367042 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D630C4338D7ACBD9DDF54633093413B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F50138D51B8992AFD1EC0CE518D85E4F /* Frameworks */ = {
+		FA369C8D334F036C6AFDD6093ADDC16D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D2CEA38A61840042C86F1081F6B6C8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		095ECAF5DF74FC885E6BBBEE22E03D9D /* MSAppModuleDemo1 */ = {
+		06E7879DB05821DAA5190751AE92DB0B /* MSAppModuleDemo1 */ = {
 			isa = PBXGroup;
 			children = (
-				9807393053E02E6369EE1F1404F4F36C /* Classes */,
-			);
-			path = MSAppModuleDemo1;
-			sourceTree = "<group>";
-		};
-		2CC79AC0B47886AC950FF1BDA1F78135 /* Routes */ = {
-			isa = PBXGroup;
-			children = (
-				0ED1ADC109BDB4F3294459F356A80199 /* UIApplication+ActiveController.h */,
-				71BA5F0DA0C43D6FBD5B3BD5D8352899 /* UIApplication+ActiveController.m */,
-				6E6CC9DC13F48D1D0FAB72BB5B005F4D /* URLParterns */,
-			);
-			path = Routes;
-			sourceTree = "<group>";
-		};
-		3A6E873D20CD6CA1773A114E4CEE634C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B85F13920129BF5494CB44B965155255 /* MSServicePush.h */,
-				50E8FB5609833294C1BA534822A76C61 /* MSServicePush.m */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		3F2304FA88CE7E57E12BD147286850A3 /* MSAppModuleDemo1 */ = {
-			isa = PBXGroup;
-			children = (
-				095ECAF5DF74FC885E6BBBEE22E03D9D /* MSAppModuleDemo1 */,
-				B9787E543378B10EFBCDD1203A041DB2 /* Support Files */,
+				26F54B1F8D7DF8419273B804BBEF6BCE /* MSAppModuleDemo1 */,
+				4295969B47277D65C26834FFA33E9004 /* Support Files */,
 			);
 			name = MSAppModuleDemo1;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		629D88B9FB5616A08705499DC4609D5D /* Classes */ = {
+		20D555DA86DBF6DF9DD01A79BE0CF772 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A0A708C2C93A4AA1F84ADA31C22FCEE4 /* MSAppModule.h */,
-				0B890A81EFE7A0C599E6B457C60DF163 /* MSAppModule.m */,
-				95AAF4F4C4D618EC81845F3C46D28548 /* MSAppModuleController.h */,
-				3C90B5FE46597318DB80FE8A2EB9D5A6 /* MSAppModuleController.m */,
-				38EFBD1B03A7F2B1CE129B1718F0FD79 /* MSAppModuleKit.h */,
-				EF451572C910F715B2B01B2C3BD02A4D /* MSMenuItem.h */,
-				7CBA65739F0B0EA43D3970570DB246CE /* MSMenuItem.m */,
-				C1396DA753DD1D9FDC94B1B4D6208628 /* MSModuleDefines.h */,
-				A0C7DACD732C8CC05B2A25E902261E38 /* MSService.h */,
-				3C4BB729E29B01A1499F6C14EBB4C592 /* MSService.m */,
-				C473EFF4CA1E3B20AB4ADD0933821684 /* MSServiceConfig.h */,
-				B41708BBEB8F9819D01E3292465AC390 /* MSServiceConfig.m */,
-				5153C5E894CA66F42B05343370992D46 /* MSServiceController.h */,
-				366F51682C8DEA91B3B932857DBAD2C4 /* MSServiceController.m */,
-				2CC79AC0B47886AC950FF1BDA1F78135 /* Routes */,
-				3A6E873D20CD6CA1773A114E4CEE634C /* Services */,
+				A1628D48AF6D4A6D40C6AAC41076530B /* SAPlugableModuleDemo1.h */,
+				A29A16737CC366745067B51E1B59D0C5 /* SAPlugableModuleDemo1.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		65BBCEFCFF0C1E69D3261A8C44B2030A /* Development Pods */ = {
+		259A750E92AA10807D350A83893997DB /* URLParterns */ = {
 			isa = PBXGroup;
 			children = (
-				3F2304FA88CE7E57E12BD147286850A3 /* MSAppModuleDemo1 */,
-				969A2B6C5C2496CC76599E1768FBB0D7 /* MSAppModuleKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6E6CC9DC13F48D1D0FAB72BB5B005F4D /* URLParterns */ = {
-			isa = PBXGroup;
-			children = (
-				7CA700C88CF555608594405C567FFA24 /* AppSettings.h */,
-				77C55C184EE78EB9D1951D5D5EFE637D /* AppSettings.m */,
-				279F9B8397535668F43A75F2FE2B5C7A /* AppURL.h */,
-				BACD935471C962DC4BD238733F2FA8EA /* AppURL.m */,
-				6E5798BAF1B17AFC6CCC35F36AFAFE5A /* RegexURLResolver.h */,
-				80961C0EB750AF1B044F0967FB6ADDBE /* RegexURLResolver.m */,
-				F6B42E46407D239565F2BACE74649456 /* Router.h */,
-				CC0702C5FC3F228DB3D0197E22CDB547 /* Router.m */,
-				47D6BEAC1CB78818B0FF0A5317E73FDB /* urls.h */,
-				AD7927B4439A6FAD525511673A069A6C /* urls.m */,
+				B0553F9BC85AAC5A35D48A078BCE52BE /* AppSettings.h */,
+				2667B256025AB5B8790D5C45D4AA0739 /* AppSettings.m */,
+				9CA5C423CFFBF293FE8027018E611D95 /* AppURL.h */,
+				FFE70BD35D3AFD1E81D9887D6BD2F818 /* AppURL.m */,
+				EC79AEAFAFEDBFD6583C552A55ADB498 /* RegexURLResolver.h */,
+				30C9ED967F2AF8DC2F6A15448C57AD61 /* RegexURLResolver.m */,
+				DE7B6B93A17F356C916BD3714F1A0BFF /* Router.h */,
+				4A946A028757387CD51671B26F8485EC /* Router.m */,
+				B65B21AF99DFD217033C8F0E43EC6A2F /* urls.h */,
+				D4DE71F13510A76FD95E810A9D02DB94 /* urls.m */,
 			);
 			path = URLParterns;
 			sourceTree = "<group>";
 		};
-		720F1873EEBF97B1012B86F96226DFCF /* Support Files */ = {
+		26DC8284C6D3D8A087BE264E9B8F6615 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				EB4AC92EDD09F27E0A145015A4AC9564 /* JLRoutes.xcconfig */,
-				62182710036870CADEC847E64E006E73 /* JLRoutes-Private.xcconfig */,
-				467F30A961034EA48E56D14877416B9D /* JLRoutes-dummy.m */,
-				F7CC51239D44EEB332BD1CBBEC478864 /* JLRoutes-prefix.pch */,
+				76B85D66A6EBF08F08CE05FE3CC38948 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		26F54B1F8D7DF8419273B804BBEF6BCE /* MSAppModuleDemo1 */ = {
+			isa = PBXGroup;
+			children = (
+				20D555DA86DBF6DF9DD01A79BE0CF772 /* Classes */,
+			);
+			path = MSAppModuleDemo1;
+			sourceTree = "<group>";
+		};
+		3D966310BC707424F33E9CAF2CE868E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7784F67544AF4B1B632AFD549BF43455 /* MSAppModuleKit.xcconfig */,
+				A4F575C117638E2575C11EC29628A26C /* MSAppModuleKit-dummy.m */,
+				F43374035C55B42A723D231F924CE207 /* MSAppModuleKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MSAppModuleKit";
+			sourceTree = "<group>";
+		};
+		4295969B47277D65C26834FFA33E9004 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B02847D20ED164A1D0506A8EABB9A4C /* MSAppModuleDemo1.xcconfig */,
+				4A68DBC1234D07FD1158B89C76E77440 /* MSAppModuleDemo1-dummy.m */,
+				87EE3B713F1E3C078D89BA4C99A6CAA4 /* MSAppModuleDemo1-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MSAppModuleDemo1";
+			sourceTree = "<group>";
+		};
+		42B4E49E5B8315BDA5E1A826C0B25156 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5577B8D214EC477B432D4653C413168F /* JLRoutes.xcconfig */,
+				FFCEF9D4D5F19FB92768290668E3E21E /* JLRoutes-dummy.m */,
+				DC42F53E6BC64B43172B10B60EF85611 /* JLRoutes-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/JLRoutes";
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		472D5C975448287607ECF1BA29230AB5 /* MSAppModuleKit */ = {
+			isa = PBXGroup;
+			children = (
+				26DC8284C6D3D8A087BE264E9B8F6615 /* Pod */,
+				3D966310BC707424F33E9CAF2CE868E2 /* Support Files */,
+			);
+			name = MSAppModuleKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		65BBCEFCFF0C1E69D3261A8C44B2030A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06E7879DB05821DAA5190751AE92DB0B /* MSAppModuleDemo1 */,
+				472D5C975448287607ECF1BA29230AB5 /* MSAppModuleKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		725508FE189AE663ABC6F76AC637116A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8449ADF018850DA1D4916F1D3BD7D68C /* JLRoutes */,
+				D5F92B54F5B7DFA6919D358C46278501 /* JLRoutes */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		76B85D66A6EBF08F08CE05FE3CC38948 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9EE4EAE102B16C106C2304AD91E6E1EF /* MSAppModule.h */,
+				0F91C18A925543FAC536FA3149FECF49 /* MSAppModule.m */,
+				BCDF0072C61EDC542885BE170BFA672D /* MSAppModuleController.h */,
+				D65C5C08871A87BE51B1D9AE5D6422E7 /* MSAppModuleController.m */,
+				4C29FADEA6EE4E6626EAE9E0C67D3701 /* MSAppModuleKit.h */,
+				6F5F1F61AD0E1AB19BD7D599F01EB03E /* MSAppSettings.h */,
+				74FEE5809B7DC46120C4E4BC3CE38E5E /* MSAppSettings.m */,
+				2F353AD4A0AD77A0C18F71440AAC6337 /* MSMenuItem.h */,
+				255AEED694741B40026C74D5583E25F8 /* MSMenuItem.m */,
+				62DF31DB10847D54F825583B6134F661 /* MSModuleDefines.h */,
+				3F63A834CED4C1FBC434B2AB3F125F4F /* MSService.h */,
+				CE4A1EBADE668571A72BE6703EC69C55 /* MSService.m */,
+				7C6ED37518CEA1F4106CE0DB26646791 /* MSServiceConfig.h */,
+				C140CC5710C2D6F6B471B006A2459A26 /* MSServiceConfig.m */,
+				1A826BA6F50EBF4FA3479FE42C88A55E /* MSServiceController.h */,
+				E42723B1B518EE08B672110ACABC57B8 /* MSServiceController.m */,
+				C3010B5EC7D9E84C84737CA8FB13D0C4 /* Routes */,
+				9E8478C7CF2BFB8148119657A5C98A25 /* Services */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -321,239 +363,145 @@
 				65BBCEFCFF0C1E69D3261A8C44B2030A /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				725508FE189AE663ABC6F76AC637116A /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				C46BD330780F9737A4DA1C843038412E /* Targets Support Files */,
+				DADCB9A7804353F6CDEB73D5BDA38298 /* Products */,
+				A37FCBB7326A6A4932831DA90A55066A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8449ADF018850DA1D4916F1D3BD7D68C /* JLRoutes */ = {
+		9E8478C7CF2BFB8148119657A5C98A25 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				42180CCF22AFDE0E8C9BC1AE00A4B40C /* JLRoutes.h */,
-				8EBE6196745E7EC64C55E9F0724B010B /* JLRoutes.m */,
-				720F1873EEBF97B1012B86F96226DFCF /* Support Files */,
+				67A69A4B665E815D1D0E5A51DF1501F5 /* MSServicePush.h */,
+				A5D2DF0CE4F2F00DB3F14696B6FCF1A8 /* MSServicePush.m */,
 			);
-			path = JLRoutes;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		969A2B6C5C2496CC76599E1768FBB0D7 /* MSAppModuleKit */ = {
+		A37FCBB7326A6A4932831DA90A55066A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F901059F40537EF180538FC3555C5543 /* Pod */,
-				CC3C196CF0CE984F46CE42B86699B968 /* Support Files */,
-			);
-			name = MSAppModuleKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9807393053E02E6369EE1F1404F4F36C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9246A883CE3184818B08FC30C6E631C1 /* SAPlugableModuleDemo1.h */,
-				DC52DB45286926ED932F7AC97749523A /* SAPlugableModuleDemo1.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		B9787E543378B10EFBCDD1203A041DB2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA45A702041857294E9ECA90586082D3 /* MSAppModuleDemo1.xcconfig */,
-				0776056D5DB832779AF78D902F0C1909 /* MSAppModuleDemo1-Private.xcconfig */,
-				BA93CA0B06271F91D7E5FD7352263302 /* MSAppModuleDemo1-dummy.m */,
-				48A05C11F3658384562F3FBDE35505D2 /* MSAppModuleDemo1-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MSAppModuleDemo1";
-			sourceTree = "<group>";
-		};
-		C46BD330780F9737A4DA1C843038412E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F521F582345C7BFF8A976DC07FE75AE7 /* Pods-MSAppModuleKit_Example */,
+				E212F6A9F1B5866D4356F0467703C077 /* Pods-MSAppModuleKit_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CC3C196CF0CE984F46CE42B86699B968 /* Support Files */ = {
+		C3010B5EC7D9E84C84737CA8FB13D0C4 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
-				33B617FD28769FA33009282B7B1DEF3B /* MSAppModuleKit.xcconfig */,
-				6B60A4076CC611789A2602CF79A96B66 /* MSAppModuleKit-Private.xcconfig */,
-				D5F7800E1D7B2806900E368DBBD86E1C /* MSAppModuleKit-dummy.m */,
-				505D8094AD67F1802F48A378FCC7A7F7 /* MSAppModuleKit-prefix.pch */,
+				32E75BF9C9E61E14123F3208ABF4CA55 /* UIApplication+ActiveController.h */,
+				C2EC9BFB12A07F6AA65CBB92733A6344 /* UIApplication+ActiveController.m */,
+				259A750E92AA10807D350A83893997DB /* URLParterns */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MSAppModuleKit";
+			path = Routes;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		D5F92B54F5B7DFA6919D358C46278501 /* JLRoutes */ = {
 			isa = PBXGroup;
 			children = (
-				D3ADEA385D9481FF3DBB1FE8148AB38C /* SAAppModule.bundle */,
-				AB1F4A357FBB87A99D4B6661B3803902 /* libJLRoutes.a */,
-				50906776FB91FCA8998395382170895F /* libMSAppModuleDemo1.a */,
-				6E53C65804BA0A9DAA8A64D29FA07EAF /* libMSAppModuleKit.a */,
-				45F40341674AD1EBF1869BE9F291E34A /* libPods-MSAppModuleKit_Example.a */,
+				C83AD2D6875CEBBEA5D7C129DA531968 /* JLRoutes.h */,
+				637F49DE2848424EE95E29324EAA40C5 /* JLRoutes.m */,
+				42B4E49E5B8315BDA5E1A826C0B25156 /* Support Files */,
+			);
+			path = JLRoutes;
+			sourceTree = "<group>";
+		};
+		DADCB9A7804353F6CDEB73D5BDA38298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44C366E26A81BD4B314AC1D637CB7892 /* libJLRoutes.a */,
+				0362865F1522AAE167072A14ED25B143 /* libMSAppModuleDemo1.a */,
+				4A616A9663879EAFAFC1BD249E686F28 /* libMSAppModuleKit.a */,
+				D1B0D93B66A38157B20EB5C434893F81 /* libPods-MSAppModuleKit_Example.a */,
+				FD6968D704A316749B6208FF8297063F /* SAAppModule.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
+		E212F6A9F1B5866D4356F0467703C077 /* Pods-MSAppModuleKit_Example */ = {
 			isa = PBXGroup;
 			children = (
-				46BE24FB1427677CE979E313A4AA2082 /* Foundation.framework */,
-				520112BE6375AA91D0BBE457BC8362DC /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F521F582345C7BFF8A976DC07FE75AE7 /* Pods-MSAppModuleKit_Example */ = {
-			isa = PBXGroup;
-			children = (
-				BD85340ACA566F4C171D8CEABBCDF024 /* Pods-MSAppModuleKit_Example-acknowledgements.markdown */,
-				FE519EC546E774F8AE44E52EE6E9ADD3 /* Pods-MSAppModuleKit_Example-acknowledgements.plist */,
-				FF5D4A7F363EB2A0F5DF683BE4B6F80C /* Pods-MSAppModuleKit_Example-dummy.m */,
-				A2660013D8418A0D17AF05CE95543772 /* Pods-MSAppModuleKit_Example-resources.sh */,
-				E5D9ADCB9B98989821D3DA66D199F2D3 /* Pods-MSAppModuleKit_Example.debug.xcconfig */,
-				F262F9E481F5C5A127D4389B1BEA5836 /* Pods-MSAppModuleKit_Example.release.xcconfig */,
+				601341ABC3F025EAE6FC703C5894E514 /* Pods-MSAppModuleKit_Example-acknowledgements.markdown */,
+				2F2BE65AC3441BED7B3B8C71ED9EB2E2 /* Pods-MSAppModuleKit_Example-acknowledgements.plist */,
+				351C6B3D4C76AB9E75C402591986FC49 /* Pods-MSAppModuleKit_Example-dummy.m */,
+				00BEE8889D9A2FA224569A7015EF93B6 /* Pods-MSAppModuleKit_Example-frameworks.sh */,
+				2E2DF5F93F974BF795DFB303AE37BD49 /* Pods-MSAppModuleKit_Example-resources.sh */,
+				758F7982D8FCAE7583DDA2EB479122F2 /* Pods-MSAppModuleKit_Example.debug.xcconfig */,
+				91100F04569DEF8043BE588E28EEDB42 /* Pods-MSAppModuleKit_Example.release.xcconfig */,
 			);
 			name = "Pods-MSAppModuleKit_Example";
 			path = "Target Support Files/Pods-MSAppModuleKit_Example";
 			sourceTree = "<group>";
 		};
-		F901059F40537EF180538FC3555C5543 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				629D88B9FB5616A08705499DC4609D5D /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		434AF5722DAE523DEF35AD8F19A1501A /* Headers */ = {
+		2085A36BF230B4C449D99C6DA7B14E60 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27F5F5FBFB60D1BC55CF6A712F5B71C /* JLRoutes.h in Headers */,
+				EE04C5415035380E580BF7C1DC0923F5 /* AppSettings.h in Headers */,
+				CC633AD2659D5C8FDD6D627B843DA9D1 /* AppURL.h in Headers */,
+				B450944B9A75FBE92D3823CF3832F3EE /* MSAppModule.h in Headers */,
+				6E42C51063AD2032E8ABA4A28B256168 /* MSAppModuleController.h in Headers */,
+				27F233F62A3F3ACC1AA95D3E49F93EBD /* MSAppModuleKit.h in Headers */,
+				C7B80ED7180213AD2441E04E076A766F /* MSAppSettings.h in Headers */,
+				90E34B4B10382B7C33BD7D0C9DFDB320 /* MSMenuItem.h in Headers */,
+				30F74CFCC37D0F3D06248F899F288E9E /* MSModuleDefines.h in Headers */,
+				B08DB8DFD515AA1C8D9AE2FA7216529E /* MSService.h in Headers */,
+				FC51AF20C4D2B0430863EE37A53DB54A /* MSServiceConfig.h in Headers */,
+				A7E6929499D0B6065A5A18DD7EFD9BA0 /* MSServiceController.h in Headers */,
+				B434650A2F884A653B77D0EE2DFCC9B0 /* MSServicePush.h in Headers */,
+				5C8AA65E5DC50D7A705C6042A9A33FED /* RegexURLResolver.h in Headers */,
+				5D15DBDE7DFCC19944F594C4DBB5C1E5 /* Router.h in Headers */,
+				1BC44C8CB04143FDB3B69669E2F0637B /* UIApplication+ActiveController.h in Headers */,
+				F2F4593456C2DE589292F55D39A02F2B /* urls.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87F511FA68455D74367B53AB3645D03A /* Headers */ = {
+		2ECDD7E2F1F63AD9AE954EBE762116CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A919C11ED1E94FD2B3D5B7C579BA57 /* SAPlugableModuleDemo1.h in Headers */,
+				B5594F86B56FD66AFF697A3CCD7FFC0E /* SAPlugableModuleDemo1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90ED8F1DE394266E6425ACF69B79E1AA /* Headers */ = {
+		E5C4330F396CDBA806E69631FDFEFFCE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3525B3D5B2FEAA18BDAE0623E3315CD1 /* AppSettings.h in Headers */,
-				EC6345C18F8D3AE397E3AFF77500E06E /* AppURL.h in Headers */,
-				9EF1A8554035405B01EE7A1293A68240 /* MSAppModule.h in Headers */,
-				95D3F5A3CF4DAC36B7DB69B880B2185D /* MSAppModuleController.h in Headers */,
-				B93E7257630DE6B1572614266CFA1964 /* MSAppModuleKit.h in Headers */,
-				65E39B2E74DC827D3784A70C49A56FA2 /* MSMenuItem.h in Headers */,
-				98F99A449AE6E54AEAF1E21E0C89D398 /* MSModuleDefines.h in Headers */,
-				8CF4F5FB96BC8512A868DA66427B2616 /* MSService.h in Headers */,
-				E2BA0BB433DAA7A90DE84C9A196F7878 /* MSServiceConfig.h in Headers */,
-				999E12347C26ABCD5994FA740A22EC02 /* MSServiceController.h in Headers */,
-				F99093D4A89D071C6262FFB0385D158E /* MSServicePush.h in Headers */,
-				5CED3A1CD0EBB454CFDA82CBFC29C3CF /* RegexURLResolver.h in Headers */,
-				EAB5D2AEAFDA1D0CE27FD2EBD03BAE8A /* Router.h in Headers */,
-				303E1F18C35F8CF54B2400A611FC1BD0 /* UIApplication+ActiveController.h in Headers */,
-				16505332624DC5A9BC5359C8D82BF26E /* urls.h in Headers */,
+				B2A43622C1D22F92490880931063571E /* JLRoutes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23D3C20B804343B36CFBB497624146B6 /* MSAppModuleKit */ = {
+		334A49F6324483F85BFAADEDD7A3F683 /* MSAppModuleKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 852D0E5482D035D45356FF0AB368F8D4 /* Build configuration list for PBXNativeTarget "MSAppModuleKit" */;
+			buildConfigurationList = 8106F5C883844C1EA3961D2C83354715 /* Build configuration list for PBXNativeTarget "MSAppModuleKit" */;
 			buildPhases = (
-				DF346C88F3B319CA90D82E53E2872B36 /* Sources */,
-				2885A04C30A20C01C810D0A45709FFCE /* Frameworks */,
-				90ED8F1DE394266E6425ACF69B79E1AA /* Headers */,
+				726A5B9DEEAE63BE57DF9C2A0D3F69D9 /* Sources */,
+				503538FA9ABCDCBBF65ED6BA7E7097FE /* Frameworks */,
+				2085A36BF230B4C449D99C6DA7B14E60 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B03F7E886CFCC8BDB9E94D4D2F9998F7 /* PBXTargetDependency */,
+				28EB02134CA5A65692063860E3B49644 /* PBXTargetDependency */,
 			);
 			name = MSAppModuleKit;
 			productName = MSAppModuleKit;
-			productReference = 6E53C65804BA0A9DAA8A64D29FA07EAF /* libMSAppModuleKit.a */;
+			productReference = 4A616A9663879EAFAFC1BD249E686F28 /* libMSAppModuleKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6DAE4B43400558C6CB045E7E04ED65A6 /* MSAppModuleDemo1 */ = {
+		40A045DF8C21A467D0092F6642949199 /* JLRoutes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B628F2864C37F7F1DF5B0E45E804041 /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1" */;
+			buildConfigurationList = 963B826381967964D0303529AF676087 /* Build configuration list for PBXNativeTarget "JLRoutes" */;
 			buildPhases = (
-				43CBACCBE012DE32F0A1AB750D5211E6 /* Sources */,
-				F50138D51B8992AFD1EC0CE518D85E4F /* Frameworks */,
-				87F511FA68455D74367B53AB3645D03A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98D3DD72F39E28FE5F2CBB5A463649EE /* PBXTargetDependency */,
-				4FA7CDFECB3DEB071BD85A9C18715D77 /* PBXTargetDependency */,
-			);
-			name = MSAppModuleDemo1;
-			productName = MSAppModuleDemo1;
-			productReference = 50906776FB91FCA8998395382170895F /* libMSAppModuleDemo1.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7DD70D6BE007944C93DC8D2BCA0271F8 /* Pods-MSAppModuleKit_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B153A3DFD28673B91D91FF459AFAA7E /* Build configuration list for PBXNativeTarget "Pods-MSAppModuleKit_Example" */;
-			buildPhases = (
-				7D16456642E61E62F532390BAB7300DC /* Sources */,
-				0984E7B22A84CACAB08367339F237BB7 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69078DD287930A9144D5C369424C7351 /* PBXTargetDependency */,
-				5DCA34CB1EC54BC6138E152ACAD45B4D /* PBXTargetDependency */,
-				9CF1ACE205017E1C04AE85F214CD2F16 /* PBXTargetDependency */,
-			);
-			name = "Pods-MSAppModuleKit_Example";
-			productName = "Pods-MSAppModuleKit_Example";
-			productReference = 45F40341674AD1EBF1869BE9F291E34A /* libPods-MSAppModuleKit_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C799277DB8BA91940982C3D5165C40C4 /* MSAppModuleDemo1-SAAppModule */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9CA3926E1AB6EBA7839FF66D44E59D1 /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1-SAAppModule" */;
-			buildPhases = (
-				B61BA944A8AA513690BC844335C47029 /* Sources */,
-				A426905C802550B8A2CDC0495D757D11 /* Frameworks */,
-				DFB12B80399509D8640F17EE231B7B4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MSAppModuleDemo1-SAAppModule";
-			productName = "MSAppModuleDemo1-SAAppModule";
-			productReference = D3ADEA385D9481FF3DBB1FE8148AB38C /* SAAppModule.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		ED62E761029CED64E55E67C3E302623E /* JLRoutes */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 030C8CEF209E59C718D6617508D2DACA /* Build configuration list for PBXNativeTarget "JLRoutes" */;
-			buildPhases = (
-				37341849D029F1C91D9A167F2BBB33C2 /* Sources */,
-				5BE045D95D21AA7DEA5DA1DFB9C7E227 /* Frameworks */,
-				434AF5722DAE523DEF35AD8F19A1501A /* Headers */,
+				99315CD9045A4941EA0E8430A132C62C /* Sources */,
+				AEBA7F1694DF3D5637C152F449367042 /* Frameworks */,
+				E5C4330F396CDBA806E69631FDFEFFCE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -561,8 +509,63 @@
 			);
 			name = JLRoutes;
 			productName = JLRoutes;
-			productReference = AB1F4A357FBB87A99D4B6661B3803902 /* libJLRoutes.a */;
+			productReference = 44C366E26A81BD4B314AC1D637CB7892 /* libJLRoutes.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		4A24AE81CE3373A11D1891E7627FEDAC /* Pods-MSAppModuleKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6981FE1EC250CBBC6ABF9EFA66C18299 /* Build configuration list for PBXNativeTarget "Pods-MSAppModuleKit_Example" */;
+			buildPhases = (
+				C29A69D6DDDA4F043C5588F5AC622D93 /* Sources */,
+				9199954692EFF8A5E8C0407D8BCFA548 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46436571900587CF5311B9F22FA6AD8 /* PBXTargetDependency */,
+				2256E8B2EF5607F48764E78188D8E388 /* PBXTargetDependency */,
+				AEF66C7D0D20F38F34B9949A6E109CDB /* PBXTargetDependency */,
+			);
+			name = "Pods-MSAppModuleKit_Example";
+			productName = "Pods-MSAppModuleKit_Example";
+			productReference = D1B0D93B66A38157B20EB5C434893F81 /* libPods-MSAppModuleKit_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		84AD2230912B8794357D740BF9543B50 /* MSAppModuleDemo1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E8B63D0EA73087EB0E7DF6901785BD /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1" */;
+			buildPhases = (
+				7118CFB3D3F9BB2854AF16A618181B67 /* Sources */,
+				96ACC820DF5A9C471DEE8602E1F3ECF0 /* Frameworks */,
+				2ECDD7E2F1F63AD9AE954EBE762116CA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54227D9C18C8FD272C03732E1645C1E8 /* PBXTargetDependency */,
+				0ADE3DC0200DBC36CC3256A6188CD7D3 /* PBXTargetDependency */,
+			);
+			name = MSAppModuleDemo1;
+			productName = MSAppModuleDemo1;
+			productReference = 0362865F1522AAE167072A14ED25B143 /* libMSAppModuleDemo1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E983A20BD43442B8C4680B2B2FDE1C49 /* MSAppModuleDemo1-SAAppModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1776A5742629F6DC4A55DFAB055B1A7 /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1-SAAppModule" */;
+			buildPhases = (
+				12240820341C8AFC197CDA2DD1A3CE3F /* Sources */,
+				FA369C8D334F036C6AFDD6093ADDC16D /* Frameworks */,
+				870C2B177A2ECD191FEF415BF83C543F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MSAppModuleDemo1-SAAppModule";
+			productName = "MSAppModuleDemo1-SAAppModule";
+			productReference = FD6968D704A316749B6208FF8297063F /* SAAppModule.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -581,21 +584,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = DADCB9A7804353F6CDEB73D5BDA38298 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED62E761029CED64E55E67C3E302623E /* JLRoutes */,
-				6DAE4B43400558C6CB045E7E04ED65A6 /* MSAppModuleDemo1 */,
-				C799277DB8BA91940982C3D5165C40C4 /* MSAppModuleDemo1-SAAppModule */,
-				23D3C20B804343B36CFBB497624146B6 /* MSAppModuleKit */,
-				7DD70D6BE007944C93DC8D2BCA0271F8 /* Pods-MSAppModuleKit_Example */,
+				40A045DF8C21A467D0092F6642949199 /* JLRoutes */,
+				84AD2230912B8794357D740BF9543B50 /* MSAppModuleDemo1 */,
+				E983A20BD43442B8C4680B2B2FDE1C49 /* MSAppModuleDemo1-SAAppModule */,
+				334A49F6324483F85BFAADEDD7A3F683 /* MSAppModuleKit */,
+				4A24AE81CE3373A11D1891E7627FEDAC /* Pods-MSAppModuleKit_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DFB12B80399509D8640F17EE231B7B4D /* Resources */ = {
+		870C2B177A2ECD191FEF415BF83C543F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -605,98 +608,99 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37341849D029F1C91D9A167F2BBB33C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CB94547A242BF5A5878F501430B3646 /* JLRoutes-dummy.m in Sources */,
-				F6F842224DF8DDB140DA0AD6DCD3F1AE /* JLRoutes.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43CBACCBE012DE32F0A1AB750D5211E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9C45673EBDB13F3BDEC2C3B8F51B697 /* MSAppModuleDemo1-dummy.m in Sources */,
-				D2C3B4B083F15806EC150E75BA5F4321 /* SAPlugableModuleDemo1.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D16456642E61E62F532390BAB7300DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				888400B7D44BB3B2EA0FB50AC30F9B58 /* Pods-MSAppModuleKit_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B61BA944A8AA513690BC844335C47029 /* Sources */ = {
+		12240820341C8AFC197CDA2DD1A3CE3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF346C88F3B319CA90D82E53E2872B36 /* Sources */ = {
+		7118CFB3D3F9BB2854AF16A618181B67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37987CB4B00B8B15C3919EB7C250C07F /* AppSettings.m in Sources */,
-				2C2E2AF98F63E0B58B72685414684C3B /* AppURL.m in Sources */,
-				FF28B9C92C53A15FE69C7284F486BB09 /* MSAppModule.m in Sources */,
-				D1E51C49F502D8DD4145B93D756FCFA1 /* MSAppModuleController.m in Sources */,
-				293EAE60854AFA23B4AABBB8B29D92DF /* MSAppModuleKit-dummy.m in Sources */,
-				DF1E0E931BB3378A3BD49483DFA7B810 /* MSMenuItem.m in Sources */,
-				005F17741A41CC33B659545142EBA014 /* MSService.m in Sources */,
-				F705989522A97A916CD1B80852F4DD7D /* MSServiceConfig.m in Sources */,
-				F534A5E7DE1812F7C1DCA486F1ECFD73 /* MSServiceController.m in Sources */,
-				41401FB244ABB3A3ADD3637D53DB85E5 /* MSServicePush.m in Sources */,
-				4B48FB670DA07EF87CD1E53EB9429B45 /* RegexURLResolver.m in Sources */,
-				080C4C23077CD6B486151BEC26848F2F /* Router.m in Sources */,
-				789D46FA1F4A1F68B70B6044CB5F0D67 /* UIApplication+ActiveController.m in Sources */,
-				F62E1ADB916B4B120540EF8AFC20AB62 /* urls.m in Sources */,
+				63E008FC23D706ADF18CE68057936A02 /* MSAppModuleDemo1-dummy.m in Sources */,
+				2EE92E79016EACD9E772B14E1F8665C2 /* SAPlugableModuleDemo1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726A5B9DEEAE63BE57DF9C2A0D3F69D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F11887596B3E737B8A551036CD7A2D /* AppSettings.m in Sources */,
+				1A5895ABC505F76DAD7C5F52CAE29F82 /* AppURL.m in Sources */,
+				CD5EC4D41D011006DF740970E44D9F72 /* MSAppModule.m in Sources */,
+				0830482EFFE78C88BBF02C94A76053A0 /* MSAppModuleController.m in Sources */,
+				960971E55D30D8A8900B7CB86E8C3811 /* MSAppModuleKit-dummy.m in Sources */,
+				AD4415A5E62F3B8EE1DC6E20DFCFC806 /* MSAppSettings.m in Sources */,
+				DC0713FADC837C7F217394B4F92F4461 /* MSMenuItem.m in Sources */,
+				1D0D4DD1350CE4AF3255935E90413A3E /* MSService.m in Sources */,
+				24D4D61C13E515E215F7695B8B7030D6 /* MSServiceConfig.m in Sources */,
+				6D16D48F4A540B723734638E9262F81F /* MSServiceController.m in Sources */,
+				C53148A3569AF694FA64D6EADEE1018D /* MSServicePush.m in Sources */,
+				0D9040EFEC62C965D1F8260FA3683ABE /* RegexURLResolver.m in Sources */,
+				9205F2E950ECE60F774B5D45799FE5E3 /* Router.m in Sources */,
+				03FE82B3E820BE5B29EC14590E64E7E5 /* UIApplication+ActiveController.m in Sources */,
+				8C24B0BED96108528784372B58D9AD35 /* urls.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99315CD9045A4941EA0E8430A132C62C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CA48A84B45D4EF027BE1FAAA9F1206 /* JLRoutes-dummy.m in Sources */,
+				D6D56EE1412D6A4666BCDA04BF2E2B39 /* JLRoutes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29A69D6DDDA4F043C5588F5AC622D93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1033078214C80EA53405598D57FCC3F /* Pods-MSAppModuleKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4FA7CDFECB3DEB071BD85A9C18715D77 /* PBXTargetDependency */ = {
+		0ADE3DC0200DBC36CC3256A6188CD7D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MSAppModuleKit;
-			target = 23D3C20B804343B36CFBB497624146B6 /* MSAppModuleKit */;
-			targetProxy = 94D90BCA4ED0750474D4DABB6030C4E6 /* PBXContainerItemProxy */;
+			target = 334A49F6324483F85BFAADEDD7A3F683 /* MSAppModuleKit */;
+			targetProxy = 282612876F08792075E9834516899ABA /* PBXContainerItemProxy */;
 		};
-		5DCA34CB1EC54BC6138E152ACAD45B4D /* PBXTargetDependency */ = {
+		2256E8B2EF5607F48764E78188D8E388 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MSAppModuleDemo1;
-			target = 6DAE4B43400558C6CB045E7E04ED65A6 /* MSAppModuleDemo1 */;
-			targetProxy = EBC2619B9733FCE6A2A3B311483F65D3 /* PBXContainerItemProxy */;
+			target = 84AD2230912B8794357D740BF9543B50 /* MSAppModuleDemo1 */;
+			targetProxy = 6D7932811E72B066A99F53CF9369086F /* PBXContainerItemProxy */;
 		};
-		69078DD287930A9144D5C369424C7351 /* PBXTargetDependency */ = {
+		28EB02134CA5A65692063860E3B49644 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JLRoutes;
-			target = ED62E761029CED64E55E67C3E302623E /* JLRoutes */;
-			targetProxy = 1600B3D981C46B7B9E8D23F9A8563C52 /* PBXContainerItemProxy */;
+			target = 40A045DF8C21A467D0092F6642949199 /* JLRoutes */;
+			targetProxy = 173330EA87ECFF27B66D2F6A99288986 /* PBXContainerItemProxy */;
 		};
-		98D3DD72F39E28FE5F2CBB5A463649EE /* PBXTargetDependency */ = {
+		54227D9C18C8FD272C03732E1645C1E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MSAppModuleDemo1-SAAppModule";
-			target = C799277DB8BA91940982C3D5165C40C4 /* MSAppModuleDemo1-SAAppModule */;
-			targetProxy = 53F3B90A807F3B480C2B96369F8B9A69 /* PBXContainerItemProxy */;
+			target = E983A20BD43442B8C4680B2B2FDE1C49 /* MSAppModuleDemo1-SAAppModule */;
+			targetProxy = 5F6C45647A5480FFE3E0C46D3AE61CE1 /* PBXContainerItemProxy */;
 		};
-		9CF1ACE205017E1C04AE85F214CD2F16 /* PBXTargetDependency */ = {
+		AEF66C7D0D20F38F34B9949A6E109CDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MSAppModuleKit;
-			target = 23D3C20B804343B36CFBB497624146B6 /* MSAppModuleKit */;
-			targetProxy = 73BA0B30F675549FF7C2F5EBABF3B03E /* PBXContainerItemProxy */;
+			target = 334A49F6324483F85BFAADEDD7A3F683 /* MSAppModuleKit */;
+			targetProxy = FF0A8E3A4125201366D40EF985DA8B39 /* PBXContainerItemProxy */;
 		};
-		B03F7E886CFCC8BDB9E94D4D2F9998F7 /* PBXTargetDependency */ = {
+		D46436571900587CF5311B9F22FA6AD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JLRoutes;
-			target = ED62E761029CED64E55E67C3E302623E /* JLRoutes */;
-			targetProxy = 0384E8475FEC5FAB929BB32B9615BFA2 /* PBXContainerItemProxy */;
+			target = 40A045DF8C21A467D0092F6642949199 /* JLRoutes */;
+			targetProxy = 9B0270E4C5C471DA065000CF4E5199F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -753,6 +757,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -774,116 +779,13 @@
 			};
 			name = Debug;
 		};
-		4AA003C55BABCC2A4D8238DDE1809F6C /* Debug */ = {
+		0BB0223B0D2E730F371FC9F7AED90A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0776056D5DB832779AF78D902F0C1909 /* MSAppModuleDemo1-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SAAppModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5DE1179067CF2B7C71E71B08235EA0C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B60A4076CC611789A2602CF79A96B66 /* MSAppModuleKit-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleKit/MSAppModuleKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		667F2A6C4C601238C52609F450F10AD0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0776056D5DB832779AF78D902F0C1909 /* MSAppModuleDemo1-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleDemo1/MSAppModuleDemo1-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		6706CD23786BCC159CCA16401EE932F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62182710036870CADEC847E64E006E73 /* JLRoutes-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JLRoutes/JLRoutes-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		67BC50BCB5EFCE3982EA3B120FC06312 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F262F9E481F5C5A127D4389B1BEA5836 /* Pods-MSAppModuleKit_Example.release.xcconfig */;
+			baseConfigurationReference = 758F7982D8FCAE7583DDA2EB479122F2 /* Pods-MSAppModuleKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		AE4461C65E764CD2EF59B781A3CFBEFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B60A4076CC611789A2602CF79A96B66 /* MSAppModuleKit-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleKit/MSAppModuleKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B77DD977923BA05095344BD45AF9F882 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0776056D5DB832779AF78D902F0C1909 /* MSAppModuleDemo1-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = SAAppModule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		CBC735B4F7D11CC414E37321C9B5DF51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5D9ADCB9B98989821D3DA66D199F2D3 /* Pods-MSAppModuleKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -894,9 +796,104 @@
 			};
 			name = Debug;
 		};
-		DCCC1D2C1B02D2E9F46466D162FD28C9 /* Release */ = {
+		13386C860BF8E7FE4DE297631CCDCA2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0776056D5DB832779AF78D902F0C1909 /* MSAppModuleDemo1-Private.xcconfig */;
+			baseConfigurationReference = 8B02847D20ED164A1D0506A8EABB9A4C /* MSAppModuleDemo1.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SAAppModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2602AD7159BE76235B0AA9F9CE90A157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B02847D20ED164A1D0506A8EABB9A4C /* MSAppModuleDemo1.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleDemo1/MSAppModuleDemo1-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		343D0872A7AD8934419712878A0203F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7784F67544AF4B1B632AFD549BF43455 /* MSAppModuleKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleKit/MSAppModuleKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3509D7D0BC11781D6BEDC2FCB1B96295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B02847D20ED164A1D0506A8EABB9A4C /* MSAppModuleDemo1.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SAAppModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		42DA6B8F9CCEE87E32B8F425449D2906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91100F04569DEF8043BE588E28EEDB42 /* Pods-MSAppModuleKit_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		788044CCEE3A8829ED745E8DE611C66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5577B8D214EC477B432D4653C413168F /* JLRoutes.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JLRoutes/JLRoutes-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7DCA4CD398EF102BFB7E41A7AA8A46FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B02847D20ED164A1D0506A8EABB9A4C /* MSAppModuleDemo1.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleDemo1/MSAppModuleDemo1-prefix.pch";
@@ -904,15 +901,17 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		E404520CA572770B559AEC50A28DCC32 /* Release */ = {
+		D7D656DB8E896BC096B0AC93E5039B61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62182710036870CADEC847E64E006E73 /* JLRoutes-Private.xcconfig */;
+			baseConfigurationReference = 5577B8D214EC477B432D4653C413168F /* JLRoutes.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JLRoutes/JLRoutes-prefix.pch";
@@ -920,7 +919,27 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EFC1AA32E4CAE92221BD738A0EC757C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7784F67544AF4B1B632AFD549BF43455 /* MSAppModuleKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MSAppModuleKit/MSAppModuleKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -929,24 +948,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		030C8CEF209E59C718D6617508D2DACA /* Build configuration list for PBXNativeTarget "JLRoutes" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6706CD23786BCC159CCA16401EE932F9 /* Debug */,
-				E404520CA572770B559AEC50A28DCC32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1B153A3DFD28673B91D91FF459AFAA7E /* Build configuration list for PBXNativeTarget "Pods-MSAppModuleKit_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CBC735B4F7D11CC414E37321C9B5DF51 /* Debug */,
-				67BC50BCB5EFCE3982EA3B120FC06312 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -956,29 +957,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		852D0E5482D035D45356FF0AB368F8D4 /* Build configuration list for PBXNativeTarget "MSAppModuleKit" */ = {
+		6981FE1EC250CBBC6ABF9EFA66C18299 /* Build configuration list for PBXNativeTarget "Pods-MSAppModuleKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE4461C65E764CD2EF59B781A3CFBEFA /* Debug */,
-				5DE1179067CF2B7C71E71B08235EA0C8 /* Release */,
+				0BB0223B0D2E730F371FC9F7AED90A06 /* Debug */,
+				42DA6B8F9CCEE87E32B8F425449D2906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B628F2864C37F7F1DF5B0E45E804041 /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1" */ = {
+		8106F5C883844C1EA3961D2C83354715 /* Build configuration list for PBXNativeTarget "MSAppModuleKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				667F2A6C4C601238C52609F450F10AD0 /* Debug */,
-				DCCC1D2C1B02D2E9F46466D162FD28C9 /* Release */,
+				343D0872A7AD8934419712878A0203F4 /* Debug */,
+				EFC1AA32E4CAE92221BD738A0EC757C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9CA3926E1AB6EBA7839FF66D44E59D1 /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1-SAAppModule" */ = {
+		93E8B63D0EA73087EB0E7DF6901785BD /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AA003C55BABCC2A4D8238DDE1809F6C /* Debug */,
-				B77DD977923BA05095344BD45AF9F882 /* Release */,
+				2602AD7159BE76235B0AA9F9CE90A157 /* Debug */,
+				7DCA4CD398EF102BFB7E41A7AA8A46FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963B826381967964D0303529AF676087 /* Build configuration list for PBXNativeTarget "JLRoutes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788044CCEE3A8829ED745E8DE611C66A /* Debug */,
+				D7D656DB8E896BC096B0AC93E5039B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1776A5742629F6DC4A55DFAB055B1A7 /* Build configuration list for PBXNativeTarget "MSAppModuleDemo1-SAAppModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13386C860BF8E7FE4DE297631CCDCA2C /* Debug */,
+				3509D7D0BC11781D6BEDC2FCB1B96295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

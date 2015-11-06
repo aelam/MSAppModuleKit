@@ -10,6 +10,12 @@
 #import "MSAppModule.h"
 #import <JLRoutes/JLRoutes.h>
 
+typedef NS_ENUM (NSUInteger, MSAppModuleLoadPriority) {
+    MSAppModuleLoadPriorityHigh = 0,
+    MSAppModuleLoadPriorityUI   = 500,
+    MSAppModuleLoadPriorityLow  = 1000
+};
+
 NSString const *MSAppModuleSettingDidChangeNotification = @"MSAppModuleSettingDidChangeNotification";
 
 MSAppModuleController *appModuleManager;
@@ -17,6 +23,7 @@ MSAppModuleController *appModuleManager;
 @interface MSAppModuleController ()
 
 @property (nonatomic, strong) JLRoutes *routes;
+@property (nonatomic, strong, readwrite) id<MSAppSettings> appSettings;
 
 @end
 
@@ -34,10 +41,15 @@ MSAppModuleController *appModuleManager;
     return appModuleManager;
 }
 
++ (instancetype)appModuleControllerWithSettings:(id<MSAppSettings>)appSettings {
+    [MSAppModuleController defaultAppModuleManager].appSettings = appSettings;
+
+    return appModuleManager;
+}
+
 - (instancetype)init {
     if (self = [super init]) {
         _modules = [NSMutableArray array];
-        self.appSettings = [NSMutableDictionary dictionary];
         _idModuleDict = [NSMutableDictionary dictionary];
         self.routes = [JLRoutes globalRoutes];
     }
@@ -49,6 +61,31 @@ MSAppModuleController *appModuleManager;
     
     return rs;
 }
+
+
+- (void)addModuleWithClasses:(NSArray *)moduleClasses {
+    for(Class moduleClass in moduleClasses) {
+        [self addModuleWithClass:moduleClass];
+    }
+}
+
+- (void)removeModuleWithClass:(Class)moduleClasses {
+    MSAppModule *module = nil;
+    
+    for(MSAppModule *e in self.modules) {
+        if([e isKindOfClass:moduleClasses]) {
+            module = e;
+            break;
+        }
+    }
+    [self removeModule:module];
+}
+
+- (void)addModuleWithClass:(Class)moduleClasses {
+    MSAppModule *module = [[moduleClasses alloc] init];
+    [self addModule:module];
+}
+
 
 - (void)addModules:(NSArray *)modules {
     for(MSAppModule *module in modules) {
@@ -69,6 +106,8 @@ MSAppModuleController *appModuleManager;
     if (!module || [_modules containsObject:module]) {
         return;
     }
+    NSAssert(self.appSettings, @"the appSettings is nil, set it before load modules");
+    
     [_modules addObject:module];
     if([module respondsToSelector:@selector(moduleDidLoad:)]) {
         [module moduleDidLoad:self.appSettings];
@@ -139,6 +178,30 @@ MSAppModuleController *appModuleManager;
 }
 
 //MARK: - Notification
+- (void)applicationDidRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    for(MSAppModule *module in _modules) {
+        if([module respondsToSelector:@selector(moduleDidRegisterUserNotificationSettings:)]) {
+            [module moduleDidRegisterUserNotificationSettings:notificationSettings];
+        }
+    }
+}
+
+- (void)applicationDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    for(MSAppModule *module in _modules) {
+        if([module respondsToSelector:@selector(moduleDidRegisterForRemoteNotificationsWithDeviceToken:)]) {
+            [module moduleDidRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+        }
+    }
+}
+
+- (void)applicationDidFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    for(MSAppModule *module in _modules) {
+        if([module respondsToSelector:@selector(moduleDidFailToRegisterForRemoteNotificationsWithError:)]) {
+            [module moduleDidFailToRegisterForRemoteNotificationsWithError:error];
+        }
+    }
+}
+
 - (void)applicationDidReceiveRemoteNotification:(NSDictionary *)userInfo {
     for(MSAppModule *module in _modules) {
         if([module respondsToSelector:@selector(moduleDidReceiveRemoteNotification:)]) {

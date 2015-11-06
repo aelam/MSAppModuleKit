@@ -32,11 +32,11 @@
     return @"1.0";
 }
 
-- (void)moduleDidLoad:(NSDictionary *)info {
+- (void)moduleDidLoad:(id<MSAppSettings>)info {
     
 }
 
-- (void)moduleDidUnload:(NSDictionary *)info {
+- (void)moduleDidUnload:(id<MSAppSettings>)info {
     
 }
 

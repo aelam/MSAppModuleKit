@@ -8,6 +8,8 @@
 
 @import Foundation;
 
+#import "MSAppSettings.h"
+
 @protocol MSMenuItem;
 @class SARoutePattern;
 @class JLRoutes;
@@ -30,8 +32,8 @@
 
 - (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)app annotation:(id)annotation navigation:(id/* <FBNavigation>*/)arg4;
 
-- (void)moduleDidLoad:(NSDictionary *)info;
-- (void)moduleDidUnload:(NSDictionary *)info;
+- (void)moduleDidLoad:(id<MSAppSettings>)info;
+- (void)moduleDidUnload:(id<MSAppSettings>)info;
 
 - (void)moduleRegisterRoutes:(JLRoutes *)route;
 - (void)moduleUnregisterRoutes:(JLRoutes *)route;
@@ -42,6 +44,12 @@
 - (void)moduleDidBecomeActive:(id)info;
 - (void)moduleWillResignActive:(id)info;
 - (void)moduleDidReceiveMemoryWarning:(id)info;
+
+// 推送处理
+- (void)moduleDidRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
+- (void)moduleDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+- (void)moduleDidFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
+
 - (void)moduleDidReceiveRemoteNotification:(NSDictionary *)userInfo;
 - (void)moduleDidReceiveLocalNotification:(UILocalNotification *)notification;
 
