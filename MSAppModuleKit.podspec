@@ -26,12 +26,11 @@ MSAppModuleKit 负责模块的加载 以及模块的接口
 
 DESC
 
-s.homepage         = "https://github.com/aelam/SAAppModule"
+s.homepage         = "http://ph.benemind.com/diffusion/MODULE"
 # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 s.license          = 'MIT'
 s.author           = { "Ryan Wang" => "wanglun02@gmail.com" }
-s.source           = { :git => "https://github.com/aelam/MSAppModule.git", :tag => s.version.to_s }
-# s.social_media_url = 'https://twitter.com/lunwang'
+s.source           = { :git => "http://ph.benemind.com/diffusion/MODULE/MSAppModuleKit.git", :tag => s.version.to_s }
 
 s.platform     = :ios, '7.0'
 s.requires_arc = true
