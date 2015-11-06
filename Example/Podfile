@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'MSAppModuleKit_Example', :exclusive => true do
     pod "MSAppModuleKit", :path => "../"
-    pod "MSAppModuleDemo1", :path => "../"
+    #    pod "MSAppModuleDemo1", :path => "../"
     
 end
 

@@ -23,7 +23,6 @@
 		6A4970638A7B7CC4DEEFBBB6 /* Pods_MSAppModuleKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4431E842DB19A06F7B7E9D9 /* Pods_MSAppModuleKit_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		760D8C2411774CAE3C6BE9FA /* libPods-MSAppModuleKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE36F290FC337DE5865C677 /* libPods-MSAppModuleKit_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		94979F411BD7871900406E7B /* MSAppModuleDemo1.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 94979F401BD7871900406E7B /* MSAppModuleDemo1.podspec */; settings = {ASSET_TAGS = (); }; };
 		94979F431BD7889600406E7B /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94979F421BD7889600406E7B /* Launch Screen.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		94979F401BD7871900406E7B /* MSAppModuleDemo1.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MSAppModuleDemo1.podspec; path = ../MSAppModuleDemo1.podspec; sourceTree = "<group>"; };
 		94979F421BD7889600406E7B /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		95CCFD3E21097828B13CE47A /* Pods-MSAppModuleKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAppModuleKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSAppModuleKit_Example/Pods-MSAppModuleKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D07E130A21D7F339BEA4F2D4 /* Pods-MSAppModuleKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAppModuleKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSAppModuleKit_Tests/Pods-MSAppModuleKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				D9B735B7BBC22622FE6D0CDD /* MSAppModuleKit.podspec */,
-				94979F401BD7871900406E7B /* MSAppModuleDemo1.podspec */,
 				DE33A6B249C51D0078A7E1BC /* README.md */,
 				02127E30434BAD46E185D02B /* LICENSE */,
 			);
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				94979F411BD7871900406E7B /* MSAppModuleDemo1.podspec in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				94979F431BD7889600406E7B /* Launch Screen.xib in Resources */,

@@ -8,8 +8,8 @@
 
 #import "MSAppDelegate.h"
 #import <MSAppModuleKit/MSAppModuleKit.h>
-#import <MSAppModuleDemo1/SAPlugableModuleDemo1.h>
-#import "MSServicePush.h"
+//##import <MSAppModuleDemo1/SAPlugableModuleDemo1.h>
+//##import "MSServicePush.h"
 
 @implementation MSAppDelegate
 
