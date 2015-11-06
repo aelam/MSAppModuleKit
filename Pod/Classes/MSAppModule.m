@@ -14,18 +14,18 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        _pageMappings = [NSMutableArray array];
-        _routeMappings = [NSMutableArray array];
+//        _pageMappings = [NSMutableArray array];
+//        _routeMappings = [NSMutableArray array];
     }
     return self;
 }
 
 - (NSString *)moduleId {
-    return @"MSAppModule";
+    return NSStringFromClass([self class]);
 }
 
 - (NSString *)moduleName {
-    return @"MSAppModuleName";
+    return NSStringFromClass([self class]);
 }
 
 - (NSString *)moduleVersion {
