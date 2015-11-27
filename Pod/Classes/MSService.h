@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (BOOL)service:(MSService *)service openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
-- (BOOL)service:(MSService *)service openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options;
+//- (BOOL)service:(MSService *)service openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options;
 
 - (void)serviceDidReceiveMemoryWarning:(id)info;      // try to clean up as much memory as possible. next step is to terminate app
 - (void)serviceWillTerminate:(id)info;
@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)service:(MSService *)service performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler NS_AVAILABLE_IOS(7_0);
 
-- (void)service:(MSService *)service performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler;
+//- (void)service:(MSService *)service performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler;
 
 - (void)service:(MSService *)service handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler;
 

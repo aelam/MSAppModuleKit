@@ -115,18 +115,18 @@ MSServiceController *serviceController;
     return NO;
 }
 
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
-    for(MSService *service in self.loadedModules) {
-        if ([service respondsToSelector:@selector(service:openURL:options:)]) {
-            BOOL rs = [service service:service openURL:url options:options];
-            if (rs) {
-                return YES;
-            }
-        }
-    }
-    return NO;
-    
-}
+//- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {
+//    for(MSService *service in self.loadedModules) {
+//        if ([service respondsToSelector:@selector(service:openURL:options:)]) {
+//            BOOL rs = [service service:service openURL:url options:options];
+//            if (rs) {
+//                return YES;
+//            }
+//        }
+//    }
+//    return NO;
+//    
+//}
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
     for(MSService *service in self.loadedModules) {
@@ -229,9 +229,9 @@ MSServiceController *serviceController;
     
 }
 
-- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler {
-    
-}
+//- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler {
+//    
+//}
 
 @end
 
