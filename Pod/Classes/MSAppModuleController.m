@@ -128,6 +128,20 @@ MSAppModuleController *appModuleManager;
     }
 }
 
+- (void)handleNotification:(NSNotification *)notification sourceModuleClass:(Class)sourceModuleClass {
+    for(MSAppModule *module in _modules) {
+        if (![module isMemberOfClass:sourceModuleClass]) {
+            if([module respondsToSelector:@selector(moduleDidReceiveNofication:)]) {
+                [module moduleDidReceiveNofication:notification];
+            }
+        }
+    }
+}
+
+- (void)handleNotification:(NSNotification *)notification sourceModule:(id<MSAppModule>)sourceModule {
+    [self handleNotification:notification sourceModuleClass:[sourceModule class]];
+}
+
 //MARK: - Life Cycle
 - (void)applicationDidEnterBackground {
     for(MSAppModule *module in _modules) {

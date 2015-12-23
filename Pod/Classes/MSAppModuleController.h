@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "MSModuleDefines.h"
 #import "MSAppSettings.h"
+#import "MSAppModule.h"
 
 MS_MODULE_EXTERN NSString *MSAppModuleSettingDidChangeNotification; //TODO: 设置
 
 @class MSAppModuleController;
 @class MSAppModule;
+@protocol MSAppModule;
 @protocol MSAppSettings;
 
 MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
@@ -44,7 +46,16 @@ MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
 
 @property(readonly, nonatomic) NSArray *modules;
 
-/* 
+
+/** 
+ * @brief Triger each module to update status
+ * @param notification 
+ * @param sourceModuleClass and sourceModule won't be notified
+ */
+- (void)handleNotification:(NSNotification *)notification sourceModuleClass:(Class)sourceModuleClass;
+- (void)handleNotification:(NSNotification *)notification sourceModule:(id<MSAppModule>)sourceModule;
+
+/*
  * These methods will forward to every module,
  * You don't have to process all calls in each module
  */

@@ -9,6 +9,9 @@
 @import Foundation;
 
 #import "MSAppSettings.h"
+#import "MSModuleDefines.h"
+
+MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 
 @class JLRoutes;
 
@@ -56,10 +59,12 @@
 - (void)moduleDidRecieveNotification:(NSNotification *)notification;
 
 
-// TODO
 // 用于状态改变
-- (void)moduleSettingsDidChange:(NSDictionary *)settings;
+// 每个模块定义自己的NotificationName作为域 默认
+// 默认的每一个模块都需要处理的发送 `MSAppModuleUpdatesNotificationName`
+- (void)moduleDidReceiveNofication:(NSNotification *)notification;
 
+- (void)moduleSettingsDidChange:(NSDictionary *)settings __deprecated;
 
 
 //- (void)handleAPNSWithPayLoad:(NSDictionary *)arg1;

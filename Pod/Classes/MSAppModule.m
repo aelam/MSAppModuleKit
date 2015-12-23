@@ -10,6 +10,8 @@
 #import <JLRoutes/JLRoutes.h>
 #import "UIApplication+ActiveController.h"
 
+NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotificationName";
+
 @implementation MSAppModule
 
 - (instancetype)init {
@@ -56,6 +58,9 @@
     
 }
 
+- (void)moduleDidReceiveNofication:(NSNotification *)notification {
+    
+}
 
 - (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)arg2 annotation:(id)arg3 navigation:(id/* <FBNavigation>*/)arg4 {
     return NO;
