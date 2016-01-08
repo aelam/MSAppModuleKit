@@ -12,6 +12,12 @@
 
 NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotificationName";
 
+@interface MSAppModule ()
+
+@property(readwrite, nonatomic, strong) id <MSAppSettings> moduleSettings;
+
+@end
+
 @implementation MSAppModule
 
 - (instancetype)init {
@@ -35,11 +41,11 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
 }
 
 - (void)moduleDidLoad:(id<MSAppSettings>)info {
-    
+    self.moduleSettings = info;
 }
 
 - (void)moduleDidUnload:(id<MSAppSettings>)info {
-    
+    self.moduleSettings = nil;
 }
 
 - (void)moduleDidEnterBackground:(id)info {
@@ -62,9 +68,9 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
     
 }
 
-- (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)arg2 annotation:(id)arg3 navigation:(id/* <FBNavigation>*/)arg4 {
-    return NO;
-}
+//- (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)arg2 annotation:(id)arg3 navigation:(id/* <FBNavigation>*/)arg4 {
+//    return NO;
+//}
 
 
 - (void)moduleDidRecieveNotification:(NSNotification *)notification {

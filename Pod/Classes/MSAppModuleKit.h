@@ -13,7 +13,4 @@
 #import <MSAppModuleKit/MSAppModule.h>
 #import <MSAppModuleKit/MSAppModuleController.h>
 
-#import <MSAppModuleKit/MSService.h>
-#import <MSAppModuleKit/MSServiceController.h>
-
 #endif /* MSAppModuleKit_h */

@@ -8,8 +8,6 @@
 
 #import "MSAppDelegate.h"
 #import <MSAppModuleKit/MSAppModuleKit.h>
-//##import <MSAppModuleDemo1/SAPlugableModuleDemo1.h>
-//##import "MSServicePush.h"
 
 @implementation MSAppDelegate
 
@@ -25,33 +23,28 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    [serviceController applicationWillResignActive:application];
     [appModuleManager applicationWillResignActive];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     
-    [serviceController applicationDidEnterBackground:application];
     [appModuleManager applicationDidEnterBackground];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    [serviceController applicationWillEnterForeground:application];
     [appModuleManager applicationWillEnterForeground];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [serviceController applicationDidBecomeActive:application];
     [appModuleManager applicationDidBecomeActive];
     
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [serviceController applicationWillTerminate:application];
     [appModuleManager applicationWillTerminate];
 }
 

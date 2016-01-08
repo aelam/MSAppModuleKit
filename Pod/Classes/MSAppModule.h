@@ -8,11 +8,11 @@
 
 @import Foundation;
 
-#import "MSAppSettings.h"
 #import "MSModuleDefines.h"
 
 MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 
+@protocol MSAppSettings;
 @class JLRoutes;
 
 @protocol MSAppModule <NSObject>
@@ -21,6 +21,7 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 @property(readonly, nonatomic) NSString *moduleName;
 @property(readonly, nonatomic) NSString *moduleVersion;
 @property(readonly, nonatomic) NSString *moduleId;
+@property(readonly, nonatomic, strong) id <MSAppSettings> moduleSettings;
 
 @optional
 
