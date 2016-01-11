@@ -68,9 +68,9 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
     
 }
 
-//- (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)arg2 annotation:(id)arg3 navigation:(id/* <FBNavigation>*/)arg4 {
-//    return NO;
-//}
+- (BOOL)openURL:(NSURL *)URL sourceApplication:(NSString *)app annotation:(id)arg3 navigation:(id/* <FBNavigation>*/)arg4 {
+    return NO;
+}
 
 
 - (void)moduleDidRecieveNotification:(NSNotification *)notification {

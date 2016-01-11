@@ -56,10 +56,18 @@ MSAppModuleController *appModuleManager;
     return self;
 }
 
-- (BOOL)openURL:(NSURL *)URL sourceApplication:(NSString *)source annotation:(id)annotation navigation:(id)arg4 {
-    BOOL rs = [self.routes routeURL:URL];
+- (BOOL)openURL:(NSURL *)URL sourceApplication:(NSString *)app annotation:(id)annotation navigation:(id)arg4 {
+
+    for(MSAppModule *module in _modules) {
+        BOOL rs = [module openURL:URL sourceApplication:app annotation:annotation navigation:arg4];
+        if(rs) {
+            return YES;
+        }
+    }
     
-    return rs;
+    [self.routes routeURL:URL];
+    
+    return YES;
 }
 
 

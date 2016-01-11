@@ -72,7 +72,7 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 //- (UIViewController *)overlayViewController;
 //- (UIViewController *)auxiliaryViewController;
 //
-//- (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)app annotation:(id)annotation navigation:(id/* <FBNavigation>*/)arg4;
+- (BOOL)openURL:(NSURL *)arg1 sourceApplication:(NSString *)app annotation:(id)annotation navigation:(id/* <FBNavigation>*/)arg4;
 //@property(readonly, nonatomic) NSArray *pageMappings;
 //@property(readonly, nonatomic) NSArray<SARoutePattern *> *routeMappings;
 
