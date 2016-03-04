@@ -47,6 +47,17 @@ MSAppModuleController *appModuleManager;
     return appModuleManager;
 }
 
+- (id<MSAppModule>)appModuleWithModuleName:(NSString *)moduleName {
+    Class moduleClass = NSClassFromString(moduleName);
+    for(MSAppModule *module in _modules) {
+        if([module class] == moduleClass) {
+            return module;
+        }
+    }
+    return nil;
+}
+
+
 - (instancetype)init {
     if (self = [super init]) {
         _modules = [NSMutableArray array];
