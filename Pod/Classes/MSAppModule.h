@@ -6,8 +6,6 @@
 //
 //
 
-@import Foundation;
-
 #import "MSModuleDefines.h"
 
 MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
