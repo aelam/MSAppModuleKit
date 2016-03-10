@@ -8,7 +8,6 @@
 
 #import "MSAppModule.h"
 #import <JLRoutes/JLRoutes.h>
-#import "UIApplication+ActiveController.h"
 
 NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotificationName";
 
@@ -82,15 +81,9 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
 }
 
 - (void)moduleRegisterRoutes:(JLRoutes *)route {
-    [route addRoute:@"path" handler:^BOOL(NSDictionary *parameters) {
-        [[UIApplication sharedApplication] topViewController];
-        
-        return YES;
-    }];
 }
 
 - (void)moduleUnregisterRoutes:(JLRoutes *)route {
-    [route removeRoute:@"path"];
 }
 
 @end
