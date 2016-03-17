@@ -11,6 +11,7 @@
 typedef UIViewController *(^ActiveTopController)(void);
 typedef UINavigationController *(^ActiveNavigationController)(void);
 typedef UITabBarController *(^ActiveTabBarController)(void);
+typedef void (^FinderResetStatus)(void);
 
 
 @protocol MSActiveControllerFinder <NSObject>
@@ -18,6 +19,7 @@ typedef UITabBarController *(^ActiveTabBarController)(void);
 @property (nonatomic, copy) ActiveTopController activeTopController;
 @property (nonatomic, copy) ActiveNavigationController activeNavigationController;
 @property (nonatomic, copy) ActiveTabBarController activeTabBarController;
+@property (nonatomic, copy) FinderResetStatus resetStatus;
 
 @end
 
@@ -29,5 +31,6 @@ typedef UITabBarController *(^ActiveTabBarController)(void);
 @property (nonatomic, copy) ActiveTopController activeTopController;
 @property (nonatomic, copy) ActiveNavigationController activeNavigationController;
 @property (nonatomic, copy) ActiveTabBarController activeTabBarController;
+@property (nonatomic, copy) FinderResetStatus resetStatus;
 
 @end
