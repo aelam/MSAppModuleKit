@@ -49,6 +49,11 @@ MSAppModuleController *appModuleManager;
 
 - (id<MSAppModule>)appModuleWithModuleName:(NSString *)moduleName {
     Class moduleClass = NSClassFromString(moduleName);
+    return [self appModuleWithModuleClass:moduleClass];
+}
+
+
+- (id<MSAppModule>)appModuleWithModuleClass:(Class)moduleClass {
     for(MSAppModule *module in _modules) {
         if([module class] == moduleClass) {
             return module;

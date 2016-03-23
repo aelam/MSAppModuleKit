@@ -33,6 +33,7 @@ MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
 + (instancetype)appModuleControllerWithSettings:(id<MSAppSettings>)appSettings;
 
 - (id<MSAppModule>)appModuleWithModuleName:(NSString *)moduleName;
+- (id<MSAppModule>)appModuleWithModuleClass:(Class)moduleClass;
 
 - (BOOL)openURL:(NSURL *)URL sourceApplication:(NSString *)sourceApp annotation:(id)arg3 navigation:(id)arg4;
 
