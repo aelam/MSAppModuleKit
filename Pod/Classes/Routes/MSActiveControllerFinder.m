@@ -33,6 +33,7 @@ static MSActiveControllerFinder *finder = nil;
         [self setUpDefaultActiveTabBarController];
         [self setUpDefaultActiveNavigationController];
         [self setUpDefaultActiveTopViewController];
+        [self setUpDefaultResetStatus];
     }
     return self;
 }
@@ -57,6 +58,11 @@ static MSActiveControllerFinder *finder = nil;
         return [weakSelf defaultActiveTopController];
     };
 }
+
+- (void)setUpDefaultResetStatus {
+    self.resetStatus = ^{
+    };
+ }
 
 
 - (UITabBarController *)defaultActiveTabBarController {
