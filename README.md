@@ -1,6 +1,6 @@
 # MSAppModuleKit
 
-[![CI Status](http://img.shields.io/travis/Ryan Wang/MSAppModuleKit.svg?style=flat)](https://travis-ci.org/Ryan Wang/MSAppModuleKit)
+[![CI Status](http://img.shields.io/travis/aelam/MSAppModuleKit.svg?style=flat)](https://travis-ci.org/aelam/MSAppModuleKit)
 [![Version](https://img.shields.io/cocoapods/v/MSAppModuleKit.svg?style=flat)](http://cocoapods.org/pods/MSAppModuleKit)
 [![License](https://img.shields.io/cocoapods/l/MSAppModuleKit.svg?style=flat)](http://cocoapods.org/pods/MSAppModuleKit)
 [![Platform](https://img.shields.io/cocoapods/p/MSAppModuleKit.svg?style=flat)](http://cocoapods.org/pods/MSAppModuleKit)

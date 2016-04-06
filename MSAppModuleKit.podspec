@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MSAppModuleKit"
-  s.version          = "0.0.11"
+  s.version          = "0.0.12"
   s.summary          = "模块加载器 MSAppModuleKit."
 
   s.description      = <<-DESC
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 
   DESC
 
-  s.homepage         = "http://ph.benemind.com/diffusion/MODULE"
+  s.homepage         = "https://github.com/aelam/MSAppModuleKit.git"
   s.license          = 'MIT'
   s.author           = { "Ryan Wang" => "wanglun02@gmail.com" }
-  s.source           = { :git => "http://ph.benemind.com/diffusion/MODULE/MSAppModuleKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/aelam/MSAppModuleKit.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
