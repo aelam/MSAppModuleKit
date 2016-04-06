@@ -1,0 +1,6 @@
+{
+  "phabricator.uri": "http://ph.benemind.com/",
+  "load": [
+    "arc-xcode-test-engine"
+  ]
+}
