@@ -4,14 +4,15 @@
     "arc-xcode-test-engine"
   ],
   "unit.xcode": {
+    "pre-build": "pod install  --project-directory=Example/ --no-repo-update",
     "build": {
       "workspace": "Example/MSAppModuleKit.xcworkspace",
-      "scheme": "MSAppModuleKit-Example",
+      "scheme": "MSAppModuleKit_Tests",
       "configuration": "Debug",
       "destination": "platform=iOS Simulator,name=iPhone 6S"
     },
     "coverage": {
-      "product": "MSAppModuleKit-Example/libMSAppModuleKit.a"
+      "product": ""
     }
   }
 }

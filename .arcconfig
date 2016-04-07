@@ -2,5 +2,17 @@
   "phabricator.uri": "http://ph.benemind.com/",
   "load": [
     "arc-xcode-test-engine"
-  ]
+  ],
+  "unit.xcode": {
+    "build": {
+      "workspace": "Example/MSAppModuleKit.xcworkspace",
+      "scheme": "MSAppModuleKit_Example",
+      "configuration": "Debug",
+      "destination": "platform=iOS Simulator,name=iPhone 6S"
+    },
+    "coverage": {
+      "product": "MSAppModuleKit_Example.a"
+    }
+  }
+
 }
