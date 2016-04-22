@@ -44,22 +44,18 @@ Use `pod lib create`
 Ref
 [Create Module with CocoaPods](http://aelam.github.io/ios%20development/2015/09/22/cocoapods/)
 
-### Routes
+#### Finder, find the current TopViewController
 
-
-```
-#### Finder
-You can use Finder to search current TopViewController
 1. Custom your Finder 使用`[MSActiveControllerFinder setFinder:[CustomFinder new]];` Set it when app launch
 2. run `[MSActiveControllerFinder finder]`, You can get the a Finder，If you just don't implement it by yourself, `[MSActiveControllerFinder finder]` will give you a TopViewController which is based on a UITabBarController+UINavigationControllers structure
-3. Before you route you can execute `[MSActiveControllerFinder finder].resetStatus();` (implement by yourself). Usually You can close your sliderController if needed 
+3. Before you route you can execute `[MSActiveControllerFinder finder].resetStatus();` (implement by yourself). Usually You can close your sliderController if needed
 
 
 #### Development
 ##### CocoaPods helps you a lot to isolate your module with each other, it make modules hardly to be tainted.
 ##### Settings can make your same module works in different apps! Or you need to do is implement all Modules' settings in a setting class
 
-```
+```lang=objc
 id<OneOfYouModuleSettings> settings = [appModuleManager appModuleWithClass:[YourModuleClass class]].moduleSettings;
 NSString *productId = settings.productId;
 // ...
@@ -93,7 +89,7 @@ NSString *productId = settings.productId;
 - (void)moduleUnregisterRoutes:(JLRoutes *)route {
   [route removeRoute:@"trade"]
 }
-
+```
 
 ## push to Specs
 [Create Module with CocoaPods](http://aelam.github.io/ios%20development/2015/09/22/cocoapods/)
@@ -106,4 +102,3 @@ NSString *productId = settings.productId;
 |------ | ---- | ----- |--- | ---- | ----- |
 |Community| Community | community |    |  |
 |Web|  WebApp    | web |    |      |
-
