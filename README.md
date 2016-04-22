@@ -90,8 +90,11 @@ NSString *productId = settings.productId;
   [route removeRoute:@"trade"]
 }
 ```
+## App Architecture
+![App Architecture](img/snapshot_1.png)
 
-## push to Specs
+
+## Push to Specs
 [Create Module with CocoaPods](http://aelam.github.io/ios%20development/2015/09/22/cocoapods/)
 
 ## Module Tables on a server
