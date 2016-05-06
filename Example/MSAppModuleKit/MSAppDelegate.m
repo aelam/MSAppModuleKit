@@ -8,6 +8,7 @@
 
 #import "MSAppDelegate.h"
 #import <MSAppModuleKit/MSAppModuleKit.h>
+#import "MSRoutesDefines.h"
 
 @implementation MSAppDelegate
 

@@ -19,6 +19,7 @@ typedef void (^FinderResetStatus)(void);
 @property (nonatomic, copy) ActiveTopController activeTopController;
 @property (nonatomic, copy) ActiveNavigationController activeNavigationController;
 @property (nonatomic, copy) ActiveTabBarController activeTabBarController;
+@property (nonatomic, copy) ActiveTabBarController rootTabBarController;
 @property (nonatomic, copy) FinderResetStatus resetStatus;
 
 @end
@@ -31,6 +32,7 @@ typedef void (^FinderResetStatus)(void);
 @property (nonatomic, copy) ActiveTopController activeTopController;
 @property (nonatomic, copy) ActiveNavigationController activeNavigationController;
 @property (nonatomic, copy) ActiveTabBarController activeTabBarController;
+@property (nonatomic, copy) ActiveTabBarController rootTabBarController;
 @property (nonatomic, copy) FinderResetStatus resetStatus;
 
 @end

@@ -30,12 +30,20 @@ static MSActiveControllerFinder *finder = nil;
 - (instancetype)init {
     self = [super init];
     if (self) {
+        [self setUpDefaultRootTabBarController];
         [self setUpDefaultActiveTabBarController];
         [self setUpDefaultActiveNavigationController];
         [self setUpDefaultActiveTopViewController];
         [self setUpDefaultResetStatus];
     }
     return self;
+}
+
+- (void)setUpDefaultRootTabBarController {
+    __weak __typeof(self)weakSelf = self;
+    self.activeTabBarController = ^ UITabBarController * {
+        return [weakSelf defaultActiveTabBarController];
+    };
 }
 
 - (void)setUpDefaultActiveTabBarController {
@@ -63,7 +71,6 @@ static MSActiveControllerFinder *finder = nil;
     self.resetStatus = ^{
     };
  }
-
 
 - (UITabBarController *)defaultActiveTabBarController {
     UITabBarController *tabBarController = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
