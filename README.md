@@ -1,5 +1,7 @@
 # MSAppModuleKit
 
+[![Join the chat at https://gitter.im/aelam/MSAppModuleKit](https://badges.gitter.im/aelam/MSAppModuleKit.svg)](https://gitter.im/aelam/MSAppModuleKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![CI Status](http://img.shields.io/travis/aelam/MSAppModuleKit.svg?style=flat)](https://travis-ci.org/aelam/MSAppModuleKit)
 [![Version](https://img.shields.io/cocoapods/v/MSAppModuleKit.svg?style=flat)](http://cocoapods.org/pods/MSAppModuleKit)
 [![License](https://img.shields.io/cocoapods/l/MSAppModuleKit.svg?style=flat)](http://cocoapods.org/pods/MSAppModuleKit)
