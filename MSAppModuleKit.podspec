@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MSAppModuleKit"
-  s.version          = "0.0.14"
+  s.version          = "0.0.15"
   s.summary          = "模块加载器 MSAppModuleKit."
 
   s.description      = <<-DESC
@@ -30,8 +30,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.frameworks = 'UIKit', 'Foundation'
-  s.dependency 'JLRoutes'
-  s.dependency 'MSRoutes'
+  s.frameworks   = 'UIKit', 'Foundation'
+  s.dependency   'MSRoutes'
 
 end

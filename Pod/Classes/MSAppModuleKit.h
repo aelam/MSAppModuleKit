@@ -6,12 +6,14 @@
 //
 //
 
-#ifndef MSAppModuleKit_h
-#define MSAppModuleKit_h
+#ifndef __MSAPPMODULEKIT_H_
+#define __MSAPPMODULEKIT_H_
 
 #import <MSAppModuleKit/MSModuleDefines.h>
 #import <MSAppModuleKit/MSAppModule.h>
 #import <MSAppModuleKit/MSAppModuleController.h>
 #import <MSAppModuleKit/MSActiveControllerFinder.h>
+#import <MSAppModuleKit/MSAppSettings.h>
+#import <MSAppModuleKit/MSPropertyValues.h>
 
-#endif /* MSAppModuleKit_h */
+#endif /* __MSAPPMODULEKIT_H_ */
