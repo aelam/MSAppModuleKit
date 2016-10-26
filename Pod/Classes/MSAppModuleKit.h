@@ -14,6 +14,5 @@
 #import <MSAppModuleKit/MSAppModuleController.h>
 #import <MSAppModuleKit/MSActiveControllerFinder.h>
 #import <MSAppModuleKit/MSAppSettings.h>
-#import <MSAppModuleKit/MSPropertyValues.h>
 
 #endif /* __MSAPPMODULEKIT_H_ */
