@@ -22,8 +22,11 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 @property(readonly, nonatomic) NSString *moduleVersion;
 @property(readonly, nonatomic) NSString *moduleId;
 @property(readonly, nonatomic, strong) id <MSAppSettings> moduleSettings;
+@property(readonly, nonatomic) BOOL isLoaded;
 
 @optional
+
+@property(readonly, nonatomic) NSDictionary<NSString *, NSString *> *plistRoutes;
 
 /* 
  * 页面跳转相关
@@ -76,15 +79,16 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 //@property(readonly, nonatomic) NSArray *pageMappings;
 //@property(readonly, nonatomic) NSArray<SARoutePattern *> *routeMappings;
 
+
 @end
 
 
 @interface MSAppModule:NSObject <MSAppModule> {
-    BOOL _isLoaded;
-    NSMutableArray *_pageMappings;
 }
 
-
-
++ (NSDictionary *)plistWithFileName:(NSString *)fileName;
 
 @end
+
+
+

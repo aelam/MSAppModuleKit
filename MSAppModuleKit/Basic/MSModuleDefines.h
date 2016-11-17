@@ -13,6 +13,3 @@
 #define MS_MODULE_EXTERN	        extern __attribute__((visibility ("default")))
 #endif /* __cplusplus */
 
-//#ifndef MS_MODULE_EXTERN
-//#define MS_MODULE_EXTERN extern
-//#endif

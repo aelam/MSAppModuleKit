@@ -46,6 +46,7 @@ MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
 - (void)addModules:(NSArray *)modules;
 - (void)removeModule:(MSAppModule *)module;
 - (void)addModule:(MSAppModule *)module;
+- (void)addModulesFromPlist:(NSString *)plistFile;
 
 @property(readonly, nonatomic) NSArray *modules;
 

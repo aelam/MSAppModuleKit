@@ -9,14 +9,23 @@
 #import "MSAppDelegate.h"
 #import <MSAppModuleKit/MSAppModuleKit.h>
 
+@interface EMAppSettings : MSAppSettings
+
+@end
+
+@implementation EMAppSettings
+
+
+
+@end
+
 @implementation MSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    id<MSAppSettings>appSettings = [MSAppSettings new];
+    id<MSAppSettings>appSettings = [EMAppSettings appSettings];
     [MSAppModuleController appModuleControllerWithSettings:appSettings];
-    MSAppModule *a = [MSAppModule new];
-    [appModuleManager addModule:a];
+    [appModuleManager addModule:[MSAppModule new]];
     
     return YES;
 }

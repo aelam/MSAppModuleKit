@@ -12,7 +12,6 @@
 #import <MSAppModuleKit/MSModuleDefines.h>
 #import <MSAppModuleKit/MSAppModule.h>
 #import <MSAppModuleKit/MSAppModuleController.h>
-#import <MSAppModuleKit/MSActiveControllerFinder.h>
 #import <MSAppModuleKit/MSAppSettings.h>
 
 #endif /* __MSAPPMODULEKIT_H_ */

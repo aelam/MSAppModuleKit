@@ -9,6 +9,7 @@
 #import "MSAppModuleController.h"
 #import "MSAppModule.h"
 #import <JLRoutes/JLRoutes.h>
+#import <MSRoutes/MSRoutes.h>
 
 typedef NS_ENUM (NSUInteger, MSAppModuleLoadPriority) {
     MSAppModuleLoadPriorityHigh = 0,
@@ -86,6 +87,12 @@ MSAppModuleController *appModuleManager;
     return YES;
 }
 
+- (void)addModulesFromPlist:(NSString *)plistFile {
+    NSArray *classArray = [NSArray arrayWithContentsOfFile:plistFile];
+    for(NSString *classname in classArray) {
+        [self addModule:[NSClassFromString(classname) new]];
+    }
+}
 
 - (void)addModuleWithClasses:(NSArray *)moduleClasses {
     for(Class moduleClass in moduleClasses) {
@@ -137,16 +144,38 @@ MSAppModuleController *appModuleManager;
         [module moduleDidLoad:self.appSettings];
     }
     
+    if ([module respondsToSelector:@selector(isLoaded)]) {
+        @try {
+            [module setValue:@(YES) forKey:@"isLoaded"];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"%@ has no setter or ivar for its bridge, which is not "
+                        "permitted. You must either @synthesize the bridge property, "
+                  "or provide your own setter method.", [module class]);
+        }
+
+    }
+    
     [self registerRoutesWithModule:module];
 }
 
 - (void)registerRoutesWithModule:(MSAppModule *)module {
+    if ([module respondsToSelector:@selector(plistRoutes)]) {
+        NSDictionary *routes = [module plistRoutes];
+        [self.routes registerRoutes:routes];
+    }
+    
     if([module respondsToSelector:@selector(moduleRegisterRoutes:)]) {
         [module moduleRegisterRoutes:self.routes];
     }
 }
 
 - (void)unregisterRoutesWithModule:(MSAppModule *)module {
+    if ([module respondsToSelector:@selector(plistRoutes)]) {
+        NSDictionary *routes = [module plistRoutes];
+        [self.routes unregisterRoutes:routes];
+    }
+
     if([module respondsToSelector:@selector(moduleUnregisterRoutes:)]) {
         [module moduleUnregisterRoutes:self.routes];
     }

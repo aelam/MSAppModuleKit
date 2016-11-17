@@ -19,10 +19,10 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
 
 @implementation MSAppModule
 
+@synthesize isLoaded = _isLoaded;
+
 - (instancetype)init {
     if (self = [super init]) {
-//        _pageMappings = [NSMutableArray array];
-//        _routeMappings = [NSMutableArray array];
     }
     return self;
 }
@@ -84,6 +84,12 @@ NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotific
 }
 
 - (void)moduleUnregisterRoutes:(JLRoutes *)route {
+}
+
++ (NSDictionary *)plistWithFileName:(NSString *)fileName {
+    NSBundle *bundle = [NSBundle bundleForClass:self];
+    NSString *path = [bundle pathForResource:fileName ofType:@"plist"];
+    return [NSDictionary dictionaryWithContentsOfFile:path];
 }
 
 @end
