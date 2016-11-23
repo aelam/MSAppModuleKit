@@ -1,12 +1,12 @@
 source 'http://ph.benemind.com/diffusion/SPEC/emspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'MSAppModuleKit_Example', :exclusive => true do
+target 'MSAppModuleKit_Example' do
     pod "MSAppModuleKit", :path => "../"
     
 end
 
-target 'MSAppModuleKit_Tests', :exclusive => true do
+target 'MSAppModuleKit_Tests' do
     pod "MSAppModuleKit", :path => "../"
     
 end
