@@ -54,12 +54,12 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 - (void)moduleDidReceiveMemoryWarning:(id)info;
 
 // 推送处理
-- (void)moduleDidRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
+- (void)moduleDidRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_DEPRECATED_IOS(9_0, 10_0, "Use UserNotifications Framework's -[UNTextInputNotificationResponse userText]") __TVOS_PROHIBITED;
 - (void)moduleDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 - (void)moduleDidFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
 
 - (void)moduleDidReceiveRemoteNotification:(NSDictionary *)userInfo;
-- (void)moduleDidReceiveLocalNotification:(UILocalNotification *)notification;
+- (void)moduleDidReceiveLocalNotification:(UILocalNotification *)notification NS_DEPRECATED_IOS(9_0, 10_0, "Use UserNotifications Framework's -[UNTextInputNotificationResponse userText]") __TVOS_PROHIBITED;
 - (void)moduleDidRecieveNotification:(NSNotification *)notification;
 
 

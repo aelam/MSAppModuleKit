@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MSAppModuleKit/Basic/**/*'
   s.frameworks   = 'UIKit', 'Foundation'
-  s.dependency   'MSRoutes', '~> 1.1.0'
+  s.dependency   'MSRoutes', '~> 1.2'
 
 end

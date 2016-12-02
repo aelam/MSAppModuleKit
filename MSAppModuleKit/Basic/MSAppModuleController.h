@@ -72,9 +72,9 @@ MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
 
 //
 - (void)applicationDidReceiveRemoteNotification:(NSDictionary *)userInfo;
-- (void)applicationDidReceiveLocalNotification:(UILocalNotification *)notification;
+- (void)applicationDidReceiveLocalNotification:(UILocalNotification *)notification NS_CLASS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's UNNotificationRequest") __TVOS_PROHIBITED;
 
-- (void)applicationDidRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
+- (void)applicationDidRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_CLASS_DEPRECATED_IOS(4_0, 10_0, "Use UserNotifications Framework's UNNotificationRequest") __TVOS_PROHIBITED;
 - (void)applicationDidRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 - (void)applicationDidFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
 
