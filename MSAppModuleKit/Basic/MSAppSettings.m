@@ -11,6 +11,10 @@
 @implementation MSAppSettings
 
 + (instancetype)appSettings {
+    return [self sharedAppSettings];
+}
+
++ (instancetype)sharedAppSettings {
     static MSAppSettings *settings = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

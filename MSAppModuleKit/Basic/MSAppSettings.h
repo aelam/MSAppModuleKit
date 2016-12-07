@@ -12,7 +12,7 @@
 
 @optional
 @property (nonatomic, strong, readwrite) NSString *mainURLScheme;
-@property (nonatomic, strong) NSArray *supportsURLSchemes;
+@property (nonatomic, strong) NSArray<NSString *> *supportsURLSchemes;
 
 @end
 
@@ -20,6 +20,9 @@
 // @abstract
 @interface MSAppSettings : NSObject <MSAppSettings>
 
-+ (instancetype)appSettings;
+// `+appSettings` is gone when converted to Swift
+//
++ (instancetype)appSettings; // __deprecated;
++ (instancetype)sharedAppSettings;
 
 @end
