@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MSAppModuleKit"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "模块加载器 MSAppModuleKit."
 
   s.description      = <<-DESC

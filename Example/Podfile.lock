@@ -1,7 +1,7 @@
 PODS:
   - JLRoutes (2.0)
-  - MSAppModuleKit (1.0.0):
-    - MSRoutes (~> 1.1)
+  - MSAppModuleKit (1.1.1):
+    - MSRoutes (~> 1.2)
   - MSRoutes (1.2.0):
     - JLRoutes
 
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   JLRoutes: 0bead23690bafa726e1528aa6459a56c9b81cb5e
-  MSAppModuleKit: c5dc599279b6b8d81bd2fcc9d7ffc096f8dc7043
+  MSAppModuleKit: 18fd80ea6a456a47878ce460841b3016d269707d
   MSRoutes: 175360dea2d43d29b7b9bba2094066c52fc9c8ff
 
 PODFILE CHECKSUM: 70ce89c046d25efd38385f9e61bfd31fae4479cb
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

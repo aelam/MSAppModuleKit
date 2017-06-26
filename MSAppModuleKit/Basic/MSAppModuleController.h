@@ -53,7 +53,7 @@ MS_MODULE_EXTERN MSAppModuleController *appModuleManager;
 
 /** 
  * @brief Triger each module to update status
- * @param notification 
+ * @param notification 通知
  * @param sourceModuleClass and sourceModule won't be notified
  */
 - (void)handleNotification:(NSNotification *)notification sourceModuleClass:(Class)sourceModuleClass;
