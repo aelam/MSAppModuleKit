@@ -6,8 +6,13 @@
 //  Copyright © 2015年 flora. All rights reserved.
 //
 
+#ifndef MSAppSettings_h
+#define MSAppSettings_h
+
+
 #import <Foundation/Foundation.h>
 
+NS_SWIFT_NAME(MSAppSettingsProtocol)
 @protocol MSAppSettings <NSObject>
 
 @optional
@@ -26,3 +31,5 @@
 + (instancetype)sharedAppSettings;
 
 @end
+
+#endif

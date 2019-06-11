@@ -6,8 +6,13 @@
 //
 //
 
-#import "MSAppModule.h"
+#if __has_include(<JLRoutes/JLRoutes.h>)
 #import <JLRoutes/JLRoutes.h>
+#else
+@import JLRoutes;
+#endif
+
+#import "MSAppModule.h"
 
 NSString *const MSAppModuleUpdatesNotificationName = @"MSAppModuleUpdatesNotificationName";
 

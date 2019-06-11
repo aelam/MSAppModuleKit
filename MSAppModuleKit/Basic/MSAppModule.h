@@ -15,6 +15,7 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 @protocol MSAppSettings;
 @class JLRoutes;
 
+NS_SWIFT_NAME(MSAppModuleProtocol)
 @protocol MSAppModule <NSObject>
 
 /* 模块基本信息 默认值会根据类名产生 */
@@ -37,8 +38,8 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 @property(readonly, nonatomic) NSArray *supportedURLSchemes; //TODO
 
 /* 模块加载与卸载时候会调用 */
-- (void)moduleDidLoad:(id<MSAppSettings>)info;
-- (void)moduleDidUnload:(id<MSAppSettings>)info;
+- (void)moduleDidLoad:(id<MSAppSettings> __nonnull)info;
+- (void)moduleDidUnload:(id<MSAppSettings> __nonnull)info;
 
 
 /* 注册Routes */
@@ -84,7 +85,10 @@ MS_MODULE_EXTERN NSString *const MSAppModuleUpdatesNotificationName;
 
 
 @interface MSAppModule:NSObject <MSAppModule> {
+    
 }
+
+- (void)moduleDidLoad:(id<MSAppSettings>)info;
 
 + (NSDictionary *)plistWithFileName:(NSString *)fileName;
 

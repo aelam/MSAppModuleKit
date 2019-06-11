@@ -6,10 +6,16 @@
 //
 //
 
+#if __has_include(<JLRoutes/JLRoutes.h>)
+#import <JLRoutes/JLRoutes.h>
+#else
+@import JLRoutes;
+#endif
+
+#import <MSRoutes/MSRoutes.h>
+
 #import "MSAppModuleController.h"
 #import "MSAppModule.h"
-#import <JLRoutes/JLRoutes.h>
-#import <MSRoutes/MSRoutes.h>
 
 typedef NS_ENUM (NSUInteger, MSAppModuleLoadPriority) {
     MSAppModuleLoadPriorityHigh = 0,
